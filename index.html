@@ -96,6 +96,7 @@
 
 
 
+
   <!-- MAIN BLOCK STARTS HERE -->
   <main class="main">
 
@@ -108,7 +109,7 @@
           </a>
           <section class="offer-description">
             <a href="#" class="slider-section__link-to-offer">
-              <h2 class="offer-description__offer-title">Карта на полгода за 9900!</h2>
+              <h3 class="offer-description__offer-title">Карта на полгода за 9900!</h3>
             </a>
             <p class="offer-description__offer-content">21 декабря в фитнес-клубе Максима прошли соревнования по армрестлингу.</p>
             <div class="slider-controls">
@@ -117,13 +118,15 @@
             </div>
           </section>
         </article>
+
+
         <article class="slider-section">
           <a href="" class="slider-section__link-to-offer">
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
             <a href="#" class="slider-section__link-to-offer">
-              <h2 class="offer-description__offer-title">"Максима" приглашает</h2>
+              <h3 class="offer-description__offer-title">"Максима" приглашает</h3>
             </a>
             <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             <div class="slider-controls">
@@ -132,13 +135,15 @@
             </div>
           </section>
         </article>
+
+
         <article class="slider-section">
           <a href="" class="slider-section__link-to-offer">
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
             <a href="#" class="slider-section__link-to-offer">
-              <h2 class="offer-description__offer-title">"Максима" приглашает</h2>
+              <h3 class="offer-description__offer-title">"Максима" приглашает</h3>
             </a>
             <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             <div class="slider-controls">
@@ -150,6 +155,112 @@
       </div>
     </div>
     <!-- HERO BLOCK WITH SLIDERS ENDS HERE -->
+
+
+    <!-- EVENTS BLOCK STARTS HERE -->
+    <div class="events">
+      <h2 class="block-title">События декабря</h2>
+      <div class="js-ski-guy"></div>
+
+      <div class="events-wrapper">
+        <div class="event-block">
+          <div class="event-block__date">
+            <span class="date-day">10</span>
+            <span class="date-month">декабря</span>
+          </div>
+          <a href="#" class="event-block__event-banner-front">
+            <p>
+              Катаемся на лыжах
+            </p>
+          </a>
+          <div class="event-block__event-banner-back"></div>
+          <span class="event-block__event-banner-pillar-front"></span>
+          <span class="event-block__event-banner-pillar-back"></span>
+        </div>
+      </div>
+
+      <div class="events-wrapper">
+        <div class="event-block">
+          <div class="event-block__date">
+            <span class="date-day">21</span>
+            <span class="date-month">декабря</span>
+          </div>
+          <a href="#" class="event-block__event-banner-front">
+            <p>
+              Турнир по армрестлингу
+            </p>
+          </a>
+          <div class="event-block__event-banner-back"></div>
+          <span class="event-block__event-banner-pillar-front"></span>
+          <span class="event-block__event-banner-pillar-back"></span>
+        </div>
+      </div>
+
+      <div class="events-wrapper">
+        <div class="event-block">
+          <div class="event-block__date">
+            <span class="date-day">24</span>
+            <span class="date-month">декабря</span>
+          </div>
+          <a href="#" class="event-block__event-banner-front">
+            <p>
+              Новый год в "Максиме"
+            </p>
+          </a>
+          <div class="event-block__event-banner-back"></div>
+          <span class="event-block__event-banner-pillar-front"></span>
+          <span class="event-block__event-banner-pillar-back"></span>
+        </div>
+      </div>
+    </div>
+    <!-- EVENTS BLOCK ENDS HERE -->
+
+
+    <!-- BODY SHAPE EVALUATION (MEASURES) BLOCK STARTS HERE -->
+    <div class="body-shape-evaluation-block">
+      <h2 class="block-title">События декабря</h2>
+      <p class="general-block-description">Узнайте, каким должен быть ваш вес, учитывая рост, возраст и род занятий.</p>
+      <div class="evaluation-form-wrapper">
+        <form class="evaluation-form" action="" method="get">
+
+          <div class="user-general-info">
+            <div class="user-general-info__user-weight">
+              <label class="evaluation-form__label" for="user-weight">Вес:</label>
+              <input id="user-weight" type="number" class="evaluation-form__user-type-input" name="weight" value="60">
+            </div>
+            <div class="user-general-info__user-age">
+              <label class="evaluation-form__label" for="user-age">Возраст:</label>
+              <input id="user-age" type="number" class="evaluation-form__user-type-input" name="age" value="25">
+            </div>
+            <div class="user-general-info__user-height">
+              <label class="evaluation-form__label" for="user-height">Рост:</label>
+              <input id="user-height" type="number" class="evaluation-form__user-type-input" name="height" value="170">
+            </div>
+          </div>
+
+          <div class="user-gender">
+            <label class="evaluation-form__section-label">Кто вы?</label>
+            <label for="gender-male"></label>
+            <input type="radio" name="gender" value="male" id="gender-male" checked>Мужчина
+            <label for="gender-female"></label>
+            <input type="radio" name="gender" value="female" id="gender-female">Женщина
+          </div>
+
+          <div class="user-body-type">
+            <label class="evaluation-form__section-label">Телосложение:</label>
+            <label for="body-type-normal">Нормальное</label>
+            <input type="radio" name="body-type" value="normal" id="body-type-normal" checked>
+            <label for="body-type-fat">Полное</label>
+            <input type="radio" name="body-type" value="fat" id="body-type-fat">
+            <label for="body-type-skinny">Хрубкое</label>
+            <input type="radio" name="body-type" value="skinny" id="body-type-skinny">
+          </div>
+
+          <button class="evaluation-form__submit-btn" type="submit">Рассчитать</button>
+        </form>
+      </div>
+    </div>
+    <!-- BODY SHAPE EVALUATION (MEASURES) BLOCK ENDS HERE -->
 
   </main>
   <!-- MAIN BLOCK ENDS HERE -->
