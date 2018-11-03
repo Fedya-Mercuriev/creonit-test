@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,17 @@
   <title>Фитнес-клуб Максима</title>
 </head>
 <body>
+  <!-- PAGE HEADER STARTS HERE -->
   <header class="page-header">
+
+    <!-- A SECTION WITH CONTACT INFO AT THE TOP OF THE PAGE STARTS HERE -->
     <div class="contact-info-top">
       <ul class="contact-info-list">
         <li class="contact-info-list__item">
+          <i class="calendar-icon">
+            <!-- Add text content "!" via css to warning icon -->
+            <i class="calendar-icon__alert-icon"></i>
+          </i>
           <a href="" class="link-schedule">Расписание занятий</a>
         </li>
         <li class="contact-info-list__item">
@@ -20,22 +27,28 @@
           <a href="" class="link-tel-number-alt">+7 3852 28-30-28</a>
         </li>
         <li class="contact-info-list__item">
+          <i class="telephone-icon"></i>
           <a href="" class="link-order-phone-call-btn">Заказать звонок</a>
         </li>
       </ul>
     </div>
+    <!-- A SECTION WITH CONTACT INFO AT THE TOP OF THE PAGE ENDS HERE -->
 
 
+    <!-- SITE MENU STARTS HERE -->
     <div class="page-navigation">
-      <a href="" class="site-logo">
-        <img src="" alt="Логотип сайта">
+      <a href="#" class="site-logo">
+        <picture>
+          <!-- <source media="(ming-width)" srcset=""> -->
+          <img src="img/site-logo.png" alt="Логотип сайта">
+        </picture>
       </a>
       <nav class="site-menu-wrapper">
         <ul class="site-menu">
           <li class="site-menu__menu-item">
             <a href="" class="menu-link">
               <i class="navigation-icon">
-                <img src="" alt="">
+                <img src="img/menu-icons/club.png" alt="Наш клуб">
               </i>
               Наш клуб
             </a>
@@ -43,7 +56,7 @@
           <li class="site-menu__menu-item">
             <a href="" class="menu-link">
               <i class="navigation-icon">
-                <img src="" alt="">
+                <img src="img/menu-icons/card.png" alt="Клубные карты">
               </i>
               Клубные карты
             </a>
@@ -51,7 +64,7 @@
           <li class="site-menu__menu-item">
             <a href="" class="menu-link">
               <i class="navigation-icon">
-                <img src="" alt="">
+                <img src="img/menu-icons/life.png" alt="Максима Life">
               </i>
               Максима Life
             </a>
@@ -59,7 +72,7 @@
           <li class="site-menu__menu-item">
             <a href="" class="menu-link">
               <i class="navigation-icon">
-                <img src="" alt="">
+                <img src="img/menu-icons/team.png" alt="Команда">
               </i>
               Команда
             </a>
@@ -67,7 +80,7 @@
           <li class="site-menu__menu-item">
             <a href="" class="menu-link">
               <i class="navigation-icon">
-                <img src="" alt="">
+                <img src="img/menu-icons/contacts.png" alt="Контакты">
               </i>
               Контакты
             </a>
@@ -75,11 +88,70 @@
         </ul>
       </nav>
     </div>
+    <!-- SITE MENU ENDS HERE -->
 
 
-    <div class="slider">
-
-    </div>
   </header>
+  <!-- PAGE HEADER ENDS HERE -->
+
+
+
+  <!-- MAIN BLOCK STARTS HERE -->
+  <main class="main">
+
+    <!-- HERO BLOCK WITH SLIDERS STARTS HERE -->
+    <div class="hero-block">
+      <div class="slider">
+        <article class="slider-section">
+          <a href="" class="slider-section__link-to-offer">
+            <img src="" alt="" class="slider-section__offer-bg">
+          </a>
+          <section class="offer-description">
+            <a href="#" class="slider-section__link-to-offer">
+              <h2 class="offer-description__offer-title">Карта на полгода за 9900!</h2>
+            </a>
+            <p class="offer-description__offer-content">21 декабря в фитнес-клубе Максима прошли соревнования по армрестлингу.</p>
+            <div class="slider-controls">
+              <a href="#" class="slider-controls__go-to-prev-offer"></a>
+              <a href="#" class="slider-controls__go-to-next-offer"></a>
+            </div>
+          </section>
+        </article>
+        <article class="slider-section">
+          <a href="" class="slider-section__link-to-offer">
+            <img src="" alt="" class="slider-section__offer-bg">
+          </a>
+          <section class="offer-description">
+            <a href="#" class="slider-section__link-to-offer">
+              <h2 class="offer-description__offer-title">"Максима" приглашает</h2>
+            </a>
+            <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
+            <div class="slider-controls">
+              <a href="#" class="slider-controls__go-to-prev-offer"></a>
+              <a href="#" class="slider-controls__go-to-next-offer"></a>
+            </div>
+          </section>
+        </article>
+        <article class="slider-section">
+          <a href="" class="slider-section__link-to-offer">
+            <img src="" alt="" class="slider-section__offer-bg">
+          </a>
+          <section class="offer-description">
+            <a href="#" class="slider-section__link-to-offer">
+              <h2 class="offer-description__offer-title">"Максима" приглашает</h2>
+            </a>
+            <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
+            <div class="slider-controls">
+              <a href="#" class="slider-controls__go-to-prev-offer"></a>
+              <a href="#" class="slider-controls__go-to-next-offer"></a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+    <!-- HERO BLOCK WITH SLIDERS ENDS HERE -->
+
+  </main>
+  <!-- MAIN BLOCK ENDS HERE -->
 </body>
 </html>
