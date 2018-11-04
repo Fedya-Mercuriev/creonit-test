@@ -1,0 +1,5 @@
+@function calculate-typography($font-size, $kerning) {
+  @return
+    font-size: $font-size;
+    line-height: $kerning / $font-size;
+}

@@ -1,0 +1,16 @@
+// @import '_variables';
+// @import '_mixins';
+@import '../sass-components/_functions';
+
+
+.contact-info-top {
+  background-color: #e33962;
+}
+
+.contact-info-list {
+  display: flex;
+  width: 978px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
