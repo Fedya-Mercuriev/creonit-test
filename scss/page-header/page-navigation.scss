@@ -53,10 +53,12 @@
     transform: translateY(-20px);
   }
 
-  &:hover .navigation-icon-wrapper > .navigation-icon::after {
-    transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
+  &:hover .navigation-icon-wrapper {
+    &::after {
+      transform: scale(0.7, 0.7);
+      -webkit-transform: scale(0.7, 0.7);
+      -ms-transform: scale(0.7, 0.7);
+    }
   }
 }
 
@@ -86,12 +88,13 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: blue;
+  // @include linear-gradient(45deg, #87e0fd 0%,#53cbf1 41%,#05abe0 100%);
   border-radius: 50%;
+  background-color: blue;
   transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.3s, background-color 0.2s;
-  transition: transform 0.3s, background-color 0.2s;
-  transition-timing-function: cubic-bezier(0.76, -0.16, 0.69, 0.99);
+  -webkit-transition: -webkit-transform 0.5s, background-color 0.2s;
+  transition: transform 0.5s, background-color 0.2s;
+  transition-timing-function: cubic-bezier(.55,-0.34,.22,.97);
 
   &__decor-image {
     align-self: center;
