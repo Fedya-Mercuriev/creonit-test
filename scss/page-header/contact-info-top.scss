@@ -1,16 +1,131 @@
-// @import '_variables';
-// @import '_mixins';
+@import '../sass-components/_variables';
+@import '../sass-components/_mixins';
 @import '../sass-components/_functions';
 
 
 .contact-info-top {
-  background-color: #e33962;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: $header-contact-info-bar-bg;
 }
 
 .contact-info-list {
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   width: 978px;
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  &__item {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__item-btn {
+    background-color: $header-contact-info-bar-buttons-bg;
+  }
+
+  &__link-schedule {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 181px;
+    padding: 0 31px 0 18px;
+    font-size: $header-contact-info-bar-buttons-font-size + px;
+    line-height: $header-contact-info-bar-items-kerning / $header-contact-info-bar-buttons-font-size;
+    color: $header-contact-info-bar-items-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link-tel-number {
+    align-self: center;
+    @include default-set-for-link();
+    font-size: 20px;
+    line-height: $header-contact-info-bar-items-kerning / 20;
+    font-weight: bold;
+  }
+
+  &__link-tel-number-alt {
+    align-self: center;
+    @include default-set-for-link();
+    font-size: 20px;
+    line-height: $header-contact-info-bar-items-kerning / 20;
+    font-weight: bold;
+  }
+
+  &__tel-number-region-code {
+    color: $header-tel-number-region-code-color;
+    font-size: 14px;
+    line-height: $header-contact-info-bar-items-kerning / 14;
+    font-weight: bold;
+  }
+
+  &__item-order-phone-call {
+    background-color: $header-contact-info-bar-buttons-bg;
+  }
+
+  &__link-order-phone-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 158px;
+    padding: 0 41px 0 30px;
+    font-size: $header-contact-info-bar-buttons-font-size + px;
+    line-height: $header-contact-info-bar-items-kerning / $header-contact-info-bar-buttons-font-size;
+    @include default-set-for-link();
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.calendar-icon {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 29px;
+  background-image: url('../../img/contact-info-top/contact-info-icons-sprite.png');
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+
+  &__alert-icon {
+    box-sizing: border-box;
+    position: absolute;
+    top: -8px;
+    left: 18px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+
+    &::after {
+      content: "!";
+      display: inline;
+      color: $header-contact-info-bar-bg;
+      font-weight: bold;
+    }
+  }
+}
+
+.telephone-icon {
+   width: 32px;
+   height: 32px;
+   background-image: url('../../img/contact-info-top/contact-info-icons-sprite.png');
+   background-position: -42px -5px;
+   background-repeat: no-repeat;
 }
