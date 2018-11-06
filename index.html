@@ -7,6 +7,7 @@
   <title>Фитнес-клуб Максима</title>
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/page-header/contact-info-top.css">
+  <link rel="stylesheet" href="css/page-header/page-navigation.css">
 </head>
 <body>
   <!-- PAGE HEADER STARTS HERE -->
@@ -18,7 +19,7 @@
         <li class="contact-info-list__item contact-info-list__item-btn">
           <a href="" class="contact-info-list__link-schedule">
             <span class="calendar-icon">
-              <span class="calendar-icon__alert-icon"></span>
+              <span class="calendar-icon__alert-icon--visible"></span>
             </span>
             Расписание занятий
           </a>
@@ -42,56 +43,68 @@
 
     <!-- SITE MENU STARTS HERE -->
     <div class="page-navigation">
-      <a href="#" class="site-logo">
-        <picture>
-          <!-- <source media="(ming-width)" srcset=""> -->
-          <img src="img/site-logo.png" alt="Логотип сайта">
-        </picture>
-      </a>
-      <nav class="site-menu-wrapper">
-        <ul class="site-menu">
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/club.png" alt="Наш клуб">
-              </i>
-              Наш клуб
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/card.png" alt="Клубные карты">
-              </i>
-              Клубные карты
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/life.png" alt="Максима Life">
-              </i>
-              Максима Life
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/team.png" alt="Команда">
-              </i>
-              Команда
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/contacts.png" alt="Контакты">
-              </i>
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-navigation-wrapper">
+        <a href="#" class="site-logo">
+          <picture>
+            <!-- <source media="(ming-width)" srcset=""> -->
+            <img src="img/site-logo.png" alt="Логотип сайта">
+          </picture>
+        </a>
+        <nav class="site-menu-wrapper">
+          <ul class="site-menu">
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/club.png" alt="Наш клуб">
+                  </i>
+                </div>
+                Наш клуб
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/card.png" alt="Клубные карты">
+                  </i>
+                </div>
+                Клубные карты
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/life.png" alt="Максима Life">
+                  </i>
+                </div>
+                Максима Life
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/team.png" alt="Команда">
+                  </i>
+                </div>
+                Команда
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/contacts.png" alt="Контакты">
+                  </i>
+                </div>
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- SITE MENU ENDS HERE -->
 
