@@ -4,3 +4,8 @@
   color: #fff;
   text-decoration: none;
 }
+
+@mixin reset-padding-margin() {
+  padding: 0;
+  margin: 0;
+}
