@@ -1,0 +1,107 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+$total-slider-cards: 3;
+
+.hero-block {
+  position: relative;
+  z-index: 2000;
+  width: $container-width + 20px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: $container-width * $total-slider-cards + px;
+}
+
+.slider-section {
+  position: relative;
+  z-index: 2000;
+  display: flex;
+  flex-basis: $container-width + px;
+  width: $container-width + px;
+  height: 401px;
+
+  &__link-to-offer {
+    width: $container-width + px;
+    height: inherit;
+  }
+
+  &[data-slider-section-number="1"] > &__link-to-offer {
+    margin-left: 20px;
+    background-image: url('../../../img/slider-bgs/1.png');
+  }
+
+  &[data-slider-section-number="2"] > &__link-to-offer {
+    margin-left: 20px;
+    background-image: url('../../../img/slider-bgs/2.png');
+  }
+
+  &[data-slider-section-number="3"] > &__link-to-offer {
+    margin-left: 20px;
+    background-image: url('../../../img/slider-bgs/3.png');
+  }
+}
+
+.offer-description {
+  position: absolute;
+  top: 91px;
+  left: 0;
+  z-index: 2001;
+  padding: 21px 30px 20px 37px;
+  background-color: $main-slider-offer-description-bg;
+  opacity: 0.95;
+
+  &__link-to-offer {
+    @include default-set-for-link();
+  }
+
+  &__offer-title {
+    width: 329px;
+    @include reset-padding-margin();
+    font-size: $main-slider-offer-title-font-size + px;
+    line-height: 1.1;
+    @include default-set-for-link();
+  }
+
+  &__offer-content {
+    width: 275px;
+    @include reset-padding-margin();
+    margin-top: 25px;
+    font-size: $main-slider-offer-paragraph-font-size + px;
+    line-height: 1.618;
+  }
+}
+
+.slider-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 49px;
+  margin-top: 25px;
+
+  &__go-to-prev-offer {
+    display: block;
+    width: 11px;
+    height: 26px;
+    padding-left: 4px;
+    background-image: url('../../../img/slider-controls/arrow-left.png');
+    background-repeat: no-repeat;
+  }
+
+  &__go-to-next-offer {
+    display: block;
+    width: 11px;
+    height: 26px;
+    padding-right: 4px;
+    background-image: url('../../../img/slider-controls/arrow-right.png');
+    background-repeat: no-repeat;
+  }
+}
