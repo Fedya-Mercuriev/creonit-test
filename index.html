@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/page-header/contact-info-top.css">
   <link rel="stylesheet" href="css/page-header/page-navigation.css">
+  <link rel="stylesheet" href="css/main/main.css">
+  <link rel="stylesheet" href="css/main/hero-block/slider.css">
+  <link rel="stylesheet" href="css/main/events/events-wrapper.css">
 </head>
 <body>
   <!-- PAGE HEADER STARTS HERE -->
@@ -59,7 +62,7 @@
                     <img class="navigation-icon__decor-image" src="img/menu-icons/club.png" alt="Наш клуб">
                   </i>
                 </div>
-                Наш клуб
+                <span class="menu-link__link-text">Наш клуб</span>
               </a>
             </li>
             <li class="site-menu__menu-item">
@@ -69,7 +72,7 @@
                     <img class="navigation-icon__decor-image" src="img/menu-icons/card.png" alt="Клубные карты">
                   </i>
                 </div>
-                Клубные карты
+                <span class="menu-link__link-text">Клубные карты</span>
               </a>
             </li>
             <li class="site-menu__menu-item">
@@ -79,7 +82,7 @@
                     <img class="navigation-icon__decor-image" src="img/menu-icons/life.png" alt="Максима Life">
                   </i>
                 </div>
-                Максима Life
+                <span class="menu-link__link-text">Максима Life</span>
               </a>
             </li>
             <li class="site-menu__menu-item">
@@ -89,7 +92,7 @@
                     <img class="navigation-icon__decor-image" src="img/menu-icons/team.png" alt="Команда">
                   </i>
                 </div>
-                Команда
+                <span class="menu-link__link-text">Команда</span>
               </a>
             </li>
             <li class="site-menu__menu-item">
@@ -99,7 +102,7 @@
                     <img class="navigation-icon__decor-image" src="img/menu-icons/contacts.png" alt="Контакты">
                   </i>
                 </div>
-                Контакты
+                <span class="menu-link__link-text">Контакты</span>
               </a>
             </li>
           </ul>
@@ -122,15 +125,15 @@
       <div class="slider">
 
         <!-- SLIDER SECTION STARTS HERE -->
-        <article class="slider-section">
-          <a href="" class="slider-section__link-to-offer">
+        <article class="slider-section" data-slider-section-number="1">
+          <a href="" class="slider-section__link-to-offer" >
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
-            <a href="#" class="slider-section__link-to-offer">
+            <a href="#" class="offer-description__link-to-offer">
               <h3 class="offer-description__offer-title">Карта на полгода за 9900!</h3>
+              <p class="offer-description__offer-content">21 декабря в фитнес-клубе Максима прошли соревнования по армрестлингу.</p>
             </a>
-            <p class="offer-description__offer-content">21 декабря в фитнес-клубе Максима прошли соревнования по армрестлингу.</p>
             <div class="slider-controls">
               <a href="#" class="slider-controls__go-to-prev-offer"></a>
               <a href="#" class="slider-controls__go-to-next-offer"></a>
@@ -140,15 +143,15 @@
         <!-- SLIDER SECTION ENDS HERE -->
 
         <!-- SLIDER SECTION STARTS HERE -->
-        <article class="slider-section">
+        <article class="slider-section" data-slider-section-number="2">
           <a href="" class="slider-section__link-to-offer">
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
-            <a href="#" class="slider-section__link-to-offer">
+            <a href="#" class="offer-description__link-to-offer">
               <h3 class="offer-description__offer-title">"Максима" приглашает</h3>
+              <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             </a>
-            <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             <div class="slider-controls">
               <a href="#" class="slider-controls__go-to-prev-offer"></a>
               <a href="#" class="slider-controls__go-to-next-offer"></a>
@@ -158,15 +161,15 @@
         <!-- SLIDER SECTION STARTS HERE -->
 
         <!-- SLIDER SECTION STARTS HERE -->
-        <article class="slider-section">
+        <article class="slider-section" data-slider-section-number="3">
           <a href="" class="slider-section__link-to-offer">
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
-            <a href="#" class="slider-section__link-to-offer">
+            <a href="#" class="offer-description__link-to-offer">
               <h3 class="offer-description__offer-title">"Максима" приглашает</h3>
+              <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             </a>
-            <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             <div class="slider-controls">
               <a href="#" class="slider-controls__go-to-prev-offer"></a>
               <a href="#" class="slider-controls__go-to-next-offer"></a>
@@ -183,61 +186,63 @@
     <!-- EVENTS BLOCK STARTS HERE -->
     <div class="events">
       <h2 class="block-title">События декабря</h2>
-      <div class="js-ski-guy"></div>
 
       <!-- EVENTS BANNER STARTS HERE -->
-      <div class="events-wrapper">
-        <div class="event-block">
-          <div class="event-block__date">
-            <span class="date-day">10</span>
-            <span class="date-month">декабря</span>
+      <div class="event-banners-wrapper">
+        <div class="js-ski-guy"></div>
+        <div class="events-wrapper">
+          <div class="event-banner">
+            <div class="event-date">
+              <span class="event-banner__date-day">10</span>
+              <span class="event-banner__date-month">декабря</span>
+            </div>
+            <a href="#" class="event-banner__banner-front">
+              <p class="event-banner__banner-text">
+                Катаемся на лыжах
+              </p>
+            </a>
+            <div class="event-banner__banner-back"></div>
+            <span class="event-banner__banner-pillar-front"></span>
+            <span class="event-banner__banner-pillar-back"></span>
           </div>
-          <a href="#" class="event-block__event-banner-front">
-            <p>
-              Катаемся на лыжах
-            </p>
-          </a>
-          <div class="event-block__event-banner-back"></div>
-          <span class="event-block__event-banner-pillar-front"></span>
-          <span class="event-block__event-banner-pillar-back"></span>
         </div>
-      </div>
-      <!-- EVENTS BANNER ENDS HERE -->
+        <!-- EVENTS BANNER ENDS HERE -->
 
-      <!-- EVENTS BANNER STARTS HERE -->
-      <div class="events-wrapper">
-        <div class="event-block">
-          <div class="event-block__date">
-            <span class="date-day">21</span>
-            <span class="date-month">декабря</span>
+        <!-- EVENTS BANNER STARTS HERE -->
+        <div class="events-wrapper">
+          <div class="event-banner">
+            <div class="event-date">
+              <span class="event-banner__date-day">21</span>
+              <span class="event-banner__date-month">декабря</span>
+            </div>
+            <a href="#" class="event-banner__banner-front">
+              <p class="event-banner__banner-text">
+                Турнир по армрестлингу
+              </p>
+            </a>
+            <div class="event-banner__banner-back"></div>
+            <span class="event-banner__banner-pillar-front"></span>
+            <span class="event-banner__banner-pillar-back"></span>
           </div>
-          <a href="#" class="event-block__event-banner-front">
-            <p>
-              Турнир по армрестлингу
-            </p>
-          </a>
-          <div class="event-block__event-banner-back"></div>
-          <span class="event-block__event-banner-pillar-front"></span>
-          <span class="event-block__event-banner-pillar-back"></span>
         </div>
-      </div>
-      <!-- EVENTS BANNER ENDS HERE -->
+        <!-- EVENTS BANNER ENDS HERE -->
 
-      <!-- EVENTS BANNER STARTS HERE -->
-      <div class="events-wrapper">
-        <div class="event-block">
-          <div class="event-block__date">
-            <span class="date-day">24</span>
-            <span class="date-month">декабря</span>
+        <!-- EVENTS BANNER STARTS HERE -->
+        <div class="events-wrapper">
+          <div class="event-banner">
+            <div class="event-date">
+              <span class="event-banner__date-day">24</span>
+              <span class="event-banner__date-month">декабря</span>
+            </div>
+            <a href="#" class="event-banner__banner-front">
+              <p class="event-banner__banner-text">
+                Новый год в "Максиме"
+              </p>
+            </a>
+            <div class="event-banner__banner-back"></div>
+            <span class="event-banner__banner-pillar-front"></span>
+            <span class="event-banner__banner-pillar-back"></span>
           </div>
-          <a href="#" class="event-block__event-banner-front">
-            <p>
-              Новый год в "Максиме"
-            </p>
-          </a>
-          <div class="event-block__event-banner-back"></div>
-          <span class="event-block__event-banner-pillar-front"></span>
-          <span class="event-block__event-banner-pillar-back"></span>
         </div>
       </div>
       <!-- EVENTS BANNER ENDS HERE -->

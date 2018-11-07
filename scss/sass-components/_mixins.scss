@@ -11,14 +11,16 @@
   margin: 0;
 }
 
-@mixin linear-gradient($direction, $color-stops...) {
-	@if is-direction($direction) == false {
-		$color-stops: $direction, $color-stops;
-		$direction: 180deg;
-	}
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
 
-	background: nth(nth($color-stops, 1), 1);
-	background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-	background: -moz-linear-gradient(legacy-direction($direction), $color-stops);
-	background: linear-gradient($direction, $color-stops);
+@mixin banner-pillar-styles() {
+  display: block;
+  width: 4px;
+  height: 271px;
+  background-color: $main-banner-pillar-color;
 }
