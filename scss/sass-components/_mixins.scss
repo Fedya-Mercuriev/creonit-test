@@ -17,3 +17,10 @@
   background: -o-linear-gradient($direction, $list);
   background: linear-gradient($direction, $list);
 }
+
+@mixin banner-pillar-styles() {
+  display: block;
+  width: 4px;
+  height: 271px;
+  background-color: $main-banner-pillar-color;
+}
