@@ -2,6 +2,8 @@
 @import '../sass-components/_mixins';
 @import '../sass-components/_functions';
 
+$menu-link-class-name: menu-link;
+
 .page-navigation {
   display: flex;
   flex-direction: row;
@@ -39,24 +41,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: $header-page-navigation-menu-links;
-  text-decoration: none;
-  font-weight: normal;
+  @include default-set-for-link();
 
-  &:hover {
+  &__link-text {
+    margin-top: 12px;
+    color: $header-page-navigation-menu-links;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  &:hover .#{$menu-link-class-name}__link-text {
     color: #e34168;
   }
 
   &:hover .navigation-icon-wrapper >.navigation-icon {
-    background-color: #e23861;
+    @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-color-hover);
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 
-  &:hover .navigation-icon::after {
-    transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8);
+  &:hover .navigation-icon-wrapper {
+    &::after {
+      transform: scale(0.7, 0.7);
+      -webkit-transform: scale(0.7, 0.7);
+      -ms-transform: scale(0.7, 0.7);
+    }
   }
 }
 
@@ -86,12 +95,13 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: blue;
+  @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-color);
   border-radius: 50%;
+  background-color: blue;
   transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.3s, background-color 0.2s;
-  transition: transform 0.3s, background-color 0.2s;
-  transition-timing-function: cubic-bezier(0.76, -0.16, 0.69, 0.99);
+  -webkit-transition: -webkit-transform 0.5s, background 0.2s;
+  transition: transform 0.5s, background 0.2s;
+  transition-timing-function: cubic-bezier(.55,-0.34,.22,.97);
 
   &__decor-image {
     align-self: center;
