@@ -55,7 +55,7 @@ $menu-link-class-name: menu-link;
   }
 
   &:hover .navigation-icon-wrapper >.navigation-icon {
-    @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-color-hover);
+    @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-colors-hover);
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
@@ -95,7 +95,7 @@ $menu-link-class-name: menu-link;
   justify-content: center;
   width: 60px;
   height: 60px;
-  @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-color);
+  @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-colors);
   border-radius: 50%;
   background-color: blue;
   transform: translateY(0px);
