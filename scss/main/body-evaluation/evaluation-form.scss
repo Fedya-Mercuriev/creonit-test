@@ -1,0 +1,9 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.evaluation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

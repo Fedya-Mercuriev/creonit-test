@@ -1,0 +1,14 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.js-ski-guy {
+  position: absolute;
+  top: 177px;
+  left: 479px;
+  z-index: 1700;
+  width: 190px;
+  height: 160px;
+  background-image: url('../../../img/ski-guy.png');
+  background-repeat: no-repeat;
+}

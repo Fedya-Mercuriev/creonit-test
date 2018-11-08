@@ -18,9 +18,35 @@
   background: linear-gradient($direction, $list);
 }
 
-@mixin banner-pillar-styles() {
-  display: block;
-  width: 4px;
-  height: 271px;
-  background-color: $main-banner-pillar-color;
+@mixin border-radius($radius) {
+  border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin form-label-style() {
+  box-sizing: border-box;
+  width: 180px;
+  padding: 12px 0 15px 0;
+  border: 2px solid #41edff;
+  text-align: center;
+  @include border-radius(40px);
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #41edff;
+  }
 }

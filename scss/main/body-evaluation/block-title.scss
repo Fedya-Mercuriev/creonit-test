@@ -1,0 +1,12 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.block-title {
+  position: relative;
+  @include reset-padding-margin();
+  font-size: 34px;
+  font-family: "Intro Regular Alt", sans-serif;
+  text-align: center;
+  color: $main-block-title-color;
+}
