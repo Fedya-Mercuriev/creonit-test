@@ -7,6 +7,6 @@
   z-index: 1000;
   @include reset-padding-margin();
   text-align: center;
-  color: #626161;
+  color: $main-block-title-color;
   font-size: 34px;
 }
