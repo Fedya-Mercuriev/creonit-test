@@ -1,12 +1,12 @@
 $container-width: 978;
-$default-link-color: #fff;
+$default-link-color: #ffffff;
 
 // Variables for header start here
 $header-contact-info-bar-bg: #e33962;
 $header-contact-info-bar-buttons-bg: #ce365a;
 $header-contact-info-bar-buttons-font-size: 12;
 $header-contact-info-bar-items-kerning: 20;
-$header-contact-info-bar-items-color: #fff;
+$header-contact-info-bar-items-color: #ffffff;
 $header-tel-number-region-code-color: #ffa3b9;
 $header-page-navigation-menu-links: #5b5b5b;
 $header-page-navigation-menu-icons-gradient-direction: 60deg;
@@ -33,6 +33,8 @@ $main-block-title-color: #626161;
   // Variables for events block start here
 
   // Variables for body shape evaluation block start here
-  $main-evaluation-form-bg-gradient-color: #1bbdce 0%, #21d0e2 100%; 
+  $main-evaluation-form-bg-gradient-color: #1bbdce 0%, #21d0e2 100%;
+  $main-evaluation-form-label-font-size: 18;
+  $main-evaluation-form-general-info-input-bg: #12a9c4;
   // Variables for body shape evaluation block start here
 //Variables for main block ends here
