@@ -22,7 +22,12 @@
   <link rel="stylesheet" href="css/main/body-evaluation/block-title.css">
   <link rel="stylesheet" href="css/main/body-evaluation/general-block-description.css">
   <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form-wrapper.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form.css">
   <link rel="stylesheet" href="css/main/body-evaluation/user-general-info.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/user-gender.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/user-body-type.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/submit-button-wrapper.css">
+  <!-- <link rel="stylesheet" href="css/main/body-evaluation/submit-button.css"> -->
 </head>
 <body>
   <!-- PAGE HEADER STARTS HERE -->
@@ -275,42 +280,52 @@
           <div class="user-general-info">
             <div class="user-general-info__user-weight">
               <label class="user-general-info__label" for="user-weight">Вес:</label>
-              <input id="user-weight" type="number" class="user-general-info__user-type-input" name="weight" value="60">
+              <input id="user-weight" type="text" class="user-general-info__user-type-input" name="weight" value="60">
             </div>
             <div class="user-general-info__user-age">
               <label class="user-general-info__label" for="user-age">Возраст:</label>
-              <input id="user-age" type="number" class="user-general-info__user-type-input" name="age" value="25">
+              <input id="user-age" type="text" class="user-general-info__user-type-input" name="age" value="25">
             </div>
             <div class="user-general-info__user-height">
               <label class="user-general-info__label" for="user-height">Рост:</label>
-              <input id="user-height" type="number" class="user-general-info__user-type-input" name="height" value="170">
+              <input id="user-height" type="text" class="user-general-info__user-type-input" name="height" value="170">
             </div>
           </div>
           <!-- GENERAL INPUTS (WEIGHT, AGE, HEIGHT) END HERE -->
 
           <!-- GENDER INPUTS START HERE -->
           <div class="user-gender">
-            <label class="evaluation-form__section-label">Кто вы?</label>
-            <label for="gender-male"></label>
-            <input type="radio" name="gender" value="male" id="gender-male" checked>Мужчина
-            <label for="gender-female"></label>
-            <input type="radio" name="gender" value="female" id="gender-female">Женщина
+            <label class="section-label">Кто вы?</label>
+            <!-- <div class="gender-male-input-wrapper"> -->
+              <input class="user-gender__gender-male-input" type="radio" name="gender" value="male" id="gender-male" checked>
+              <label for="gender-male" class="user-gender__gender-male-label">
+                Мужчина
+              </label>
+            <!-- </div> -->
+            <!-- <div class="gender-female-input-wrapper"> -->
+              <input class="user-gender__gender-female-input" type="radio" name="gender" value="female" id="gender-female">
+              <label for="gender-female" class="user-gender__gender-female-label">
+                Женщина
+              </label>
+            <!-- </div> -->
           </div>
           <!-- GENDER INPUTS END HERE -->
 
           <!-- BODY TYPE INPUTS START HERE -->
           <div class="user-body-type">
-            <label class="evaluation-form__section-label">Телосложение:</label>
-            <label for="body-type-normal">Нормальное</label>
-            <input type="radio" name="body-type" value="normal" id="body-type-normal" checked>
-            <label for="body-type-fat">Полное</label>
-            <input type="radio" name="body-type" value="fat" id="body-type-fat">
-            <label for="body-type-skinny">Хрубкое</label>
-            <input type="radio" name="body-type" value="skinny" id="body-type-skinny">
+            <label class="section-label">Телосложение:</label>
+            <input class="user-body-type__body-type-normal-input" type="radio" name="body-type" value="normal" id="body-type-normal" checked>
+            <label class="user-body-type__body-type-normal-label" for="body-type-normal">Нормальное</label>
+            <input class="user-body-type__body-type-fat-input" type="radio" name="body-type" value="fat" id="body-type-fat">
+            <label class="user-body-type__body-type-fat-label" for="body-type-fat">Полное</label>
+            <input class="user-body-type__body-type-skinny-input" type="radio" name="body-type" value="skinny" id="body-type-skinny">
+            <label class="user-body-type__body-type-skinny-label" for="body-type-skinny">Хрубкое</label>
           </div>
-          <!-- GENDER INPUTS END HERE -->
+          <!-- BODY TYPE INPUTS END HERE -->
 
-          <button class="evaluation-form__submit-btn" type="submit">Рассчитать</button>
+          <div class="submit-button-wrapper">
+            <button class="submit-button-wrapper__submit-btn" type="submit">Рассчитать</button>
+          </div>
         </form>
       </div>
     </div>
