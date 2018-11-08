@@ -19,7 +19,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   width: $container-width + px;
   margin-top: 55px;
 }
@@ -35,8 +35,8 @@
 
 .js-ski-guy {
   position: absolute;
-  top: 0;
-  left: -05px;
+  top: 177px;
+  left: 479px;
   z-index: 1700;
   width: 190px;
   height: 160px;
@@ -44,7 +44,20 @@
 }
 
 .events-wrapper {
+  position: relative;
   width: 230px;
+
+  &[data-event-num="1"] {
+    top: 47px;
+  }
+
+  &[data-event-num="2"] {
+    top: 23px;
+  }
+
+  &[data-event-num="3"] {
+    top: 0;
+  }
 }
 
 .event-banner {
