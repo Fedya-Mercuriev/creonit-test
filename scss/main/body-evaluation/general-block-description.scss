@@ -1,0 +1,12 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.general-block-description {
+  @include reset-padding-margin();
+  margin-top: 22px;
+  margin-bottom: 47px;
+  text-align: center;
+  font-size: 22px;
+  color: $main-general-block-description;
+}

@@ -1,0 +1,33 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.submit-button-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__submit-btn {
+    box-sizing: border-box;
+    width: 251px;
+    border: 2px solid #ffffff;
+    padding: 15px 48px;
+    @include border-radius(2px);
+    margin-top: 38px;
+    background-color: transparent;
+    font-size: 22px;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #41edff;
+    }
+
+    &:active {
+      outline-color: transparent;
+      border: 2px solid #1bbbd9;
+      background-color: #41edff;
+    }
+  }
+}

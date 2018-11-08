@@ -1,0 +1,46 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.user-gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 62px;
+  margin-top: 40px;
+
+  &__gender-male-label {
+    @include form-label-style();
+    margin-left: 12px;
+  }
+
+  &__gender-male-input:checked + &__gender-male-label {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &__gender-male-input {
+    display: none;
+  }
+
+  &__gender-female-label {
+    @include form-label-style();
+    margin-left: 20px;
+  }
+
+  &__gender-female-input:checked + &__gender-female-label {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &__gender-female-input {
+    display: none;
+  }
+}
+
+.section-label {
+  font-size: $main-evaluation-form-label-font-size + px;
+  color: #ffffff;
+}

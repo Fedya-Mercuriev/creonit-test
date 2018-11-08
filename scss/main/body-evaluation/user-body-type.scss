@@ -1,0 +1,56 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.user-body-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+  &__body-type-normal-label {
+    @include form-label-style();
+    margin-left: 12px;
+  }
+
+  &__body-type-normal-input {
+    display: none;
+  }
+
+  &__body-type-normal-input:checked + &__body-type-normal-label {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &__body-type-fat-label {
+    @include form-label-style();
+    margin-left: 20px;
+  }
+
+  &__body-type-fat-input {
+    display: none;
+  }
+
+  &__body-type-fat-input:checked + &__body-type-fat-label {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  &__body-type-skinny-label {
+    @include form-label-style();
+    margin-left: 20px;
+  }
+
+  &__body-type-skinny-input {
+    display: none;
+  }
+
+  &__body-type-skinny-input:checked + &__body-type-skinny-label {
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
