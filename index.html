@@ -10,7 +10,19 @@
   <link rel="stylesheet" href="css/page-header/page-navigation.css">
   <link rel="stylesheet" href="css/main/main.css">
   <link rel="stylesheet" href="css/main/hero-block/slider.css">
+  <link rel="stylesheet" href="css/main/events/events.css">
   <link rel="stylesheet" href="css/main/events/events-wrapper.css">
+  <link rel="stylesheet" href="css/main/events/block-title.css">
+  <link rel="stylesheet" href="css/main/events/ski-guy.css">
+  <link rel="stylesheet" href="css/main/events/event-banners-wrapper.css">
+  <link rel="stylesheet" href="css/main/events/event-banner.css">
+  <link rel="stylesheet" href="css/main/events/event-date.css">
+  <link rel="stylesheet" href="css/main/events/mountains-bg-wrapper.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/body-shape-evaluation-block.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/block-title.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/general-block-description.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form-wrapper.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/user-general-info.css">
 </head>
 <body>
   <!-- PAGE HEADER STARTS HERE -->
@@ -189,64 +201,65 @@
 
       <!-- EVENTS BANNER STARTS HERE -->
       <div class="event-banners-wrapper">
-        <div class="js-ski-guy"></div>
-        <div class="events-wrapper">
-          <div class="event-banner">
-            <div class="event-date">
-              <span class="event-banner__date-day">10</span>
-              <span class="event-banner__date-month">декабря</span>
+          <div class="js-ski-guy"></div>
+          <div class="events-wrapper" data-event-num="1">
+            <div class="event-banner">
+              <div class="event-date">
+                <span class="event-banner__date-day">10</span>
+                <span class="event-banner__date-month">декабря</span>
+              </div>
+              <a href="#" class="event-banner__banner-front">
+                <p class="event-banner__banner-text">
+                  Катаемся на лыжах
+                </p>
+              </a>
+              <div class="event-banner__banner-back"></div>
+              <span class="event-banner__banner-pillar-front"></span>
+              <span class="event-banner__banner-pillar-back"></span>
             </div>
-            <a href="#" class="event-banner__banner-front">
-              <p class="event-banner__banner-text">
-                Катаемся на лыжах
-              </p>
-            </a>
-            <div class="event-banner__banner-back"></div>
-            <span class="event-banner__banner-pillar-front"></span>
-            <span class="event-banner__banner-pillar-back"></span>
           </div>
-        </div>
-        <!-- EVENTS BANNER ENDS HERE -->
+          <!-- EVENTS BANNER ENDS HERE -->
 
-        <!-- EVENTS BANNER STARTS HERE -->
-        <div class="events-wrapper">
-          <div class="event-banner">
-            <div class="event-date">
-              <span class="event-banner__date-day">21</span>
-              <span class="event-banner__date-month">декабря</span>
+          <!-- EVENTS BANNER STARTS HERE -->
+          <div class="events-wrapper" data-event-num="2">
+            <div class="event-banner">
+              <div class="event-date">
+                <span class="event-banner__date-day">21</span>
+                <span class="event-banner__date-month">декабря</span>
+              </div>
+              <a href="#" class="event-banner__banner-front">
+                <p class="event-banner__banner-text">
+                  Турнир по армрестлингу
+                </p>
+              </a>
+              <div class="event-banner__banner-back"></div>
+              <span class="event-banner__banner-pillar-front"></span>
+              <span class="event-banner__banner-pillar-back"></span>
             </div>
-            <a href="#" class="event-banner__banner-front">
-              <p class="event-banner__banner-text">
-                Турнир по армрестлингу
-              </p>
-            </a>
-            <div class="event-banner__banner-back"></div>
-            <span class="event-banner__banner-pillar-front"></span>
-            <span class="event-banner__banner-pillar-back"></span>
           </div>
-        </div>
-        <!-- EVENTS BANNER ENDS HERE -->
+          <!-- EVENTS BANNER ENDS HERE -->
 
-        <!-- EVENTS BANNER STARTS HERE -->
-        <div class="events-wrapper">
-          <div class="event-banner">
-            <div class="event-date">
-              <span class="event-banner__date-day">24</span>
-              <span class="event-banner__date-month">декабря</span>
+          <!-- EVENTS BANNER STARTS HERE -->
+          <div class="events-wrapper" data-event-num="3">
+            <div class="event-banner">
+              <div class="event-date">
+                <span class="event-banner__date-day">24</span>
+                <span class="event-banner__date-month">декабря</span>
+              </div>
+              <a href="#" class="event-banner__banner-front">
+                <p class="event-banner__banner-text">
+                  Новый год в "Максиме"
+                </p>
+              </a>
+              <div class="event-banner__banner-back"></div>
+              <span class="event-banner__banner-pillar-front"></span>
+              <span class="event-banner__banner-pillar-back"></span>
             </div>
-            <a href="#" class="event-banner__banner-front">
-              <p class="event-banner__banner-text">
-                Новый год в "Максиме"
-              </p>
-            </a>
-            <div class="event-banner__banner-back"></div>
-            <span class="event-banner__banner-pillar-front"></span>
-            <span class="event-banner__banner-pillar-back"></span>
           </div>
         </div>
-      </div>
       <!-- EVENTS BANNER ENDS HERE -->
-
+      <div class="mountains-bg-wrapper">
+      </div>
     </div>
     <!-- EVENTS BLOCK ENDS HERE -->
 
@@ -261,16 +274,16 @@
           <!-- GENERAL INPUTS (WEIGHT, AGE, HEIGHT) START HERE -->
           <div class="user-general-info">
             <div class="user-general-info__user-weight">
-              <label class="evaluation-form__label" for="user-weight">Вес:</label>
-              <input id="user-weight" type="number" class="evaluation-form__user-type-input" name="weight" value="60">
+              <label class="user-general-info__label" for="user-weight">Вес:</label>
+              <input id="user-weight" type="number" class="user-general-info__user-type-input" name="weight" value="60">
             </div>
             <div class="user-general-info__user-age">
-              <label class="evaluation-form__label" for="user-age">Возраст:</label>
-              <input id="user-age" type="number" class="evaluation-form__user-type-input" name="age" value="25">
+              <label class="user-general-info__label" for="user-age">Возраст:</label>
+              <input id="user-age" type="number" class="user-general-info__user-type-input" name="age" value="25">
             </div>
             <div class="user-general-info__user-height">
-              <label class="evaluation-form__label" for="user-height">Рост:</label>
-              <input id="user-height" type="number" class="evaluation-form__user-type-input" name="height" value="170">
+              <label class="user-general-info__label" for="user-height">Рост:</label>
+              <input id="user-height" type="number" class="user-general-info__user-type-input" name="height" value="170">
             </div>
           </div>
           <!-- GENERAL INPUTS (WEIGHT, AGE, HEIGHT) END HERE -->
