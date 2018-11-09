@@ -4,6 +4,22 @@
 
 .event-banner {
   position: relative;
+  width: 230px;
+
+  &__event-date {
+    position: relative;
+    top: -17px;
+    left: 0;
+    z-index: 2500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    transform: skewY(-10deg);
+    background-color: $main-banner-bg;
+    text-align: center;
+  }
 
   &__date-day {
     color: #ffffff;

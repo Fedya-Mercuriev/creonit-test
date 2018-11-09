@@ -5,8 +5,13 @@
 $total-slider-cards: 3;
 
 .hero-block {
-  position: relative;
-  z-index: 2000;
+  
+  // position: relative;
+  // z-index: 2000;
+  
+}
+
+.hero-block-wrapper {
   width: $container-width + 20px;
   overflow: hidden;
 }
@@ -14,11 +19,12 @@ $total-slider-cards: 3;
 .slider {
   position: relative;
   top: 0;
-  left: 20px;
+  left: -20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: $container-width * $total-slider-cards + px;
+
 }
 
 .slider-section {
@@ -28,6 +34,7 @@ $total-slider-cards: 3;
   flex-basis: $container-width + px;
   width: $container-width + px;
   height: 401px;
+  margin-left: 20px;
 
   &__link-to-offer {
     width: $container-width + px;

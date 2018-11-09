@@ -5,22 +5,20 @@
 $menu-link-class-name: menu-link;
 
 .page-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-top: 17px;
 
   &-wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     width: $container-width + px;
   }
 }
 
 .site-menu-wrapper {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .site-menu {
@@ -107,3 +105,4 @@ $menu-link-class-name: menu-link;
     align-self: center;
   }
 }
+
