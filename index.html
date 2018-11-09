@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -6,23 +6,25 @@ a<!DOCTYPE html>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фитнес-клуб Максима</title>
   <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/centrifying-block.css">
   <link rel="stylesheet" href="css/page-header/contact-info-top.css">
   <link rel="stylesheet" href="css/page-header/page-navigation.css">
   <link rel="stylesheet" href="css/main/main.css">
   <link rel="stylesheet" href="css/main/hero-block/slider.css">
   <link rel="stylesheet" href="css/main/events/events.css">
-  <link rel="stylesheet" href="css/main/events/events-wrapper.css">
+  <!-- <link rel="stylesheet" href="css/main/events/events-wrapper.css"> -->
   <link rel="stylesheet" href="css/main/events/block-title.css">
   <link rel="stylesheet" href="css/main/events/ski-guy.css">
   <link rel="stylesheet" href="css/main/events/event-banners-wrapper.css">
+  <link rel="stylesheet" href="css/main/events/event-banner-wrapper.css">
   <link rel="stylesheet" href="css/main/events/event-banner.css">
-  <link rel="stylesheet" href="css/main/events/event-date.css">
-  <link rel="stylesheet" href="css/main/events/mountains-bg-wrapper.css">
+  <!-- <link rel="stylesheet" href="css/main/events/event-date.css"> -->
+  <!-- <link rel="stylesheet" href="css/main/events/mountains-bg-wrapper.css"> -->
   <link rel="stylesheet" href="css/main/body-evaluation/body-shape-evaluation-block.css">
   <link rel="stylesheet" href="css/main/body-evaluation/block-title.css">
   <link rel="stylesheet" href="css/main/body-evaluation/general-block-description.css">
   <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form-wrapper.css">
-  <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form.css">
+  <!-- <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form.css"> -->
   <link rel="stylesheet" href="css/main/body-evaluation/user-general-info.css">
   <link rel="stylesheet" href="css/main/body-evaluation/user-gender.css">
   <link rel="stylesheet" href="css/main/body-evaluation/user-body-type.css">
@@ -62,7 +64,7 @@ a<!DOCTYPE html>
 
 
     <!-- SITE MENU STARTS HERE -->
-    <div class="page-navigation">
+    <div class="page-navigation centrifying-block">
       <div class="page-navigation-wrapper">
         <a href="#" class="site-logo">
           <picture>
@@ -138,8 +140,9 @@ a<!DOCTYPE html>
   <main class="main">
 
     <!-- HERO BLOCK WITH SLIDERS STARTS HERE -->
-    <div class="hero-block">
-      <div class="slider">
+    <div class="hero-block centrifying-block">
+      <div class="hero-block-wrapper">
+        <div class="slider">
 
         <!-- SLIDER SECTION STARTS HERE -->
         <article class="slider-section" data-slider-section-number="1">
@@ -196,20 +199,22 @@ a<!DOCTYPE html>
         <!-- SLIDER SECTION ENDS HERE -->
 
       </div>
+      </div>
     </div>
     <!-- HERO BLOCK WITH SLIDERS ENDS HERE -->
 
 
     <!-- EVENTS BLOCK STARTS HERE -->
     <div class="events">
-      <h2 class="block-title">События декабря</h2>
+      <div class="centrifying-block">
+        <h2 class="block-title">События декабря</h2>
 
       <!-- EVENTS BANNER STARTS HERE -->
       <div class="event-banners-wrapper">
           <div class="js-ski-guy"></div>
-          <div class="events-wrapper" data-event-num="1">
+          <div class="events-banner-wrapper" data-event-num="1">
             <div class="event-banner">
-              <div class="event-date">
+              <div class="event-banner__event-date">
                 <span class="event-banner__date-day">10</span>
                 <span class="event-banner__date-month">декабря</span>
               </div>
@@ -226,9 +231,9 @@ a<!DOCTYPE html>
           <!-- EVENTS BANNER ENDS HERE -->
 
           <!-- EVENTS BANNER STARTS HERE -->
-          <div class="events-wrapper" data-event-num="2">
+          <div class="events-banner-wrapper" data-event-num="2">
             <div class="event-banner">
-              <div class="event-date">
+              <div class="event-banner__event-date">
                 <span class="event-banner__date-day">21</span>
                 <span class="event-banner__date-month">декабря</span>
               </div>
@@ -245,9 +250,9 @@ a<!DOCTYPE html>
           <!-- EVENTS BANNER ENDS HERE -->
 
           <!-- EVENTS BANNER STARTS HERE -->
-          <div class="events-wrapper" data-event-num="3">
+          <div class="events-banner-wrapper" data-event-num="3">
             <div class="event-banner">
-              <div class="event-date">
+              <div class="event-banner__event-date">
                 <span class="event-banner__date-day">24</span>
                 <span class="event-banner__date-month">декабря</span>
               </div>
@@ -263,14 +268,15 @@ a<!DOCTYPE html>
           </div>
         </div>
       <!-- EVENTS BANNER ENDS HERE -->
-      <div class="mountains-bg-wrapper">
+      </div>
+      <div class="events__mountains-bg-wrapper">
       </div>
     </div>
     <!-- EVENTS BLOCK ENDS HERE -->
 
 
     <!-- BODY SHAPE EVALUATION (MEASURES) BLOCK STARTS HERE -->
-    <div class="body-shape-evaluation-block">
+    <div class="body-shape-evaluation-block centrifying-block">
       <h2 class="block-title">Взвесьте себя и узнайте, что делать</h2>
       <p class="general-block-description">Узнайте, каким должен быть ваш вес, учитывая рост, возраст и род занятий.</p>
       <div class="evaluation-form-wrapper">
