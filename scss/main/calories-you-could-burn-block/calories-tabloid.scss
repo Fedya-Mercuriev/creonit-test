@@ -1,0 +1,52 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.calories-tabloid {
+	box-sizing: border-box;
+	width: 372px;
+	padding: 6px;
+	margin-bottom: 78px;
+	background-color: #ffffff;
+
+	&__sign {
+		box-sizing: border-box;
+		padding: 25px 25px;
+		border: 5px solid $calories-tabloid-border-color;
+	}
+
+	&__title {
+		@include reset-padding-margin();
+		margin-bottom: 3px;
+		color: $calories-tabloid-title-color;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	&__text {
+		@include reset-padding-margin();
+		font-size: 100%;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50px;
+		display: block;
+		width: 16px;
+		height: 78px;
+		@include gradient(left, $calories-tabloid-handle-gradient-colors);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 50px;
+		display: block;
+		width: 16px;
+		height: 78px;
+		@include gradient(left, $calories-tabloid-handle-gradient-colors);
+	}
+}
