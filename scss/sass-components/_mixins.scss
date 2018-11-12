@@ -57,3 +57,9 @@
   color: $color;
   line-height: 1
 }
+
+@mixin add-img-from-sprite($img-url, $position) {
+  background-image: url('#{$img-url}');
+  background-position: $position;
+  background-repeat: no-repeat;
+}
