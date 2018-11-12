@@ -1,0 +1,14 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.footer-working-hours {
+	width: 230px;
+
+	&__block-title {
+		@include reset-padding-margin();
+		margin-bottom: 5px;
+		font-size: 18px;
+		color: #ffffff;
+	}
+}
