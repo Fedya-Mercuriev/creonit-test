@@ -1,0 +1,16 @@
+@import '../sass-components/_variables';
+@import '../sass-components/_mixins';
+@import '../sass-components/_functions';
+
+.footer-copyright {
+	position: relative;
+	@include reset-padding-margin();
+	font-size: 18px;
+	color: #ffffff;
+
+	&::before {
+		content: '\00a9';
+		position: absolute;
+		right: 100%;
+	}
+}

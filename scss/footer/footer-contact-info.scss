@@ -1,0 +1,26 @@
+@import '../sass-components/_variables';
+@import '../sass-components/_mixins';
+@import '../sass-components/_functions';
+
+.footer-contact-info {
+	display: flex;
+	flex-direction: column;
+	
+	&__address {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+
+	&__phone-number {
+		color: #ffffff;
+		font-weight: bold;
+		text-decoration: none; 
+	}
+
+	&__phone-number-alt {
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
