@@ -50,3 +50,10 @@
     background-color: #41edff;
   }
 }
+
+@mixin walk-metre-style($font-size, $color) {
+  font-size: $font-size + px;
+  font-weight: bold;
+  color: $color;
+  line-height: 1
+}
