@@ -99,15 +99,11 @@
   background-repeat: no-repeat;
 
   &__alert-icon {
-
-    &--visible {
-      box-sizing: border-box;
+    display: none;
+    box-sizing: border-box;
       position: absolute;
       top: -8px;
       left: 18px;
-      display: flex;
-      flex-flow: column;
-      justify-content: space-around;
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -120,6 +116,11 @@
         color: $header-contact-info-bar-bg;
         font-weight: bold;
       }
+
+    &--visible {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
     }
     &--hidden {
       display: none;
