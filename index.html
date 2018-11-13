@@ -41,6 +41,12 @@
   <link rel="stylesheet" href="css/footer/footer-column-general-info.css">
   <link rel="stylesheet" href="css/footer/footer-copyright.css">
   <link rel="stylesheet" href="css/footer/footer-contact-info.css">
+  <link rel="stylesheet" href="css/footer/footer-working-hours/footer-working-hours.css">
+  <link rel="stylesheet" href="css/footer/footer-working-hours/footer-working-hours-content.css">
+  <link rel="stylesheet" href="css/footer/footer-social-buttons/social-buttons-block.css">
+  <link rel="stylesheet" href="css/footer/footer-working-hours/footer-working-hours-content.css">
+  <link rel="stylesheet" href="css/footer/legal-info.css">
+  <link rel="stylesheet" href="css/callback-form.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -53,7 +59,7 @@
         <li class="contact-info-list__item contact-info-list__item-btn">
           <a href="" class="contact-info-list__link-schedule">
             <span class="calendar-icon">
-              <span class="calendar-icon__alert-icon--visible"></span>
+              <span class="calendar-icon__alert-icon"></span>
             </span>
             Расписание занятий
           </a>
@@ -402,17 +408,17 @@
       <!-- WORKING HOURS SCHEDULE BLOCK STARTS HERE -->
       <div class="footer-working-hours">
         <h6 class="footer-working-hours__block-title">Режим работы</h6>
-        <p class="footer-working-hours__content">
-          <span class="footer-working-hours__week-day">Пн-Пт:</span>
-          <span class="footer-working-hours__time">7:00 - 23:00</span>
+        <p class="footer-working-hours-content">
+          <span class="footer-working-hours-content__week-day">Пн-Пт:</span>
+          <span class="footer-working-hours-content__time">7:00 - 23:00</span>
         </p>
-        <p class="footer-working-hours__content">
-          <span class="footer-working-hours__week-day">Сб:</span>
-          <span class="footer-working-hours__time">8:00 - 22:00</span>
+        <p class="footer-working-hours-content">
+          <span class="footer-working-hours-content__week-day">Сб:</span>
+          <span class="footer-working-hours-content__time">8:00 - 22:00</span>
         </p>
-        <p class="footer-working-hours__content">
-          <span class="footer-working-hours__week-day">Вс:</span>
-          <span class="footer-working-hours__time">9:00 - 21:00</span>
+        <p class="footer-working-hours-content">
+          <span class="footer-working-hours-content__week-day">Вс:</span>
+          <span class="footer-working-hours-content__time">9:00 - 21:00</span>
         </p>
       </div>
       <!-- WORKING HOURS SCHEDULE BLOCK ENDS HERE -->
@@ -423,32 +429,44 @@
         <div class="social-buttons-block">
           <ul class="social-buttons-list">
             <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__vk">Вконтакте</a>
+              <a href="" class="social-buttons-list__vk social-buttons-list__link">Вконтакте</a>
             </li>
             <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__fb">Facebook</a>
+              <a href="" class="social-buttons-list__fb social-buttons-list__link">Facebook</a>
             </li>
             <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__ok">Одноклассники</a>
+              <a href="" class="social-buttons-list__ok social-buttons-list__link">Одноклассники</a>
             </li>
             <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__yt">YouTube</a>
+              <a href="" class="social-buttons-list__yt social-buttons-list__link">YouTube</a>
             </li>
           </ul>
         </div>
-        <a href="" class="legal-info">Правила клуба (публичная оферта)</a>
+        <a href="" class="legal-info">
+          <span class="legal-info__bold-text">
+            Правила клуба
+          </span> (публичная оферта)</a>
       </div>
       </div>
       <!-- SOCIAL BUTTONS AND LEGAL INFO BLOCK ENDS HERE -->
 
     </div>
   </footer>
+  <div class="callback-form-overlay callback-form-overlay--shown"></div>
+  <div class="callback-form-wrapper">
+    <div class="callback-form">
+      <div class="close-form-btn">
+        <i class="close-form-btn__stroke-down"></i>
+        <i class="close-form-btn__stroke-up"></i>
+      </div>
+      <div class="callback-form__title"></div>
+      <div class="callback-form__content"></div>
+    </div>
+  </div>
   <!-- FOOTER ENDS HERE -->
-  <script>
-    (function ($) {
-    let x = $('.slider-section');
-    console.log(x);      
-    })(jQuery);
+  <script src="js/add-calendar-alert.js"></script>
+  <script src="js/block-scroll.js"></script>
+  <script src="js/show-callback-form.js"></script>
   </script>
 </body>
 </html>
