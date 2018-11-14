@@ -1,0 +1,152 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.social-buttons-legal-info {
+	width: 313px;
+}
+
+.social-buttons-block {
+	margin-bottom: 15px;
+}
+
+.social-buttons-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	@include reset-padding-margin();
+	list-style-type: none;
+
+	&__item {
+		position: relative;
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		background-color: $footer-social-btn-bg;
+		cursor: pointer;
+		transition: all 0.3s;
+
+
+		&:hover {
+			background-color: #ffffff;
+		}
+
+		&:hover .social-button-decor {
+			transform: scale(0.9);
+		}
+
+		&:hover .social-button__link-vk + .social-button-decor {
+			background-color: $footer-social-btn-vk-bg-color;
+		}
+
+		&:hover .social-button__link-fb + .social-button-decor {
+			background-color: $footer-social-btn-fb-bg-color;
+		}
+		
+		&:hover .social-button__link-ok + .social-button-decor {
+			background-color: $footer-social-btn-ok-bg-color;
+		}
+
+		&:hover .social-button__link-yt + .social-button-decor {
+			background-color: $footer-social-btn-yt-bg-color;
+		}
+	}
+}
+
+.social-button {
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-color: $footer-social-btn-bg;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: #ffffff;
+	}
+
+	&__link {
+		position: relative;
+		z-index: 1;
+		width: 29px;
+		height: 29px;
+		text-indent: -9999px;
+		opacity: 1;
+
+		&-vk {
+			width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "vk"), 'width') + px;
+			height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "vk"), 'height') + px;
+			@include add-img-from-sprite('../../../img/social-icons-sprite.png', -54px -10px);
+			// transition: transform .2s;
+	
+			// &: hover {
+	
+			// }
+		}
+
+		&-fb {
+			width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "fb"), 'width') + px;
+			height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "fb"), 'height') + px;
+			@include add-img-from-sprite('../../../img/social-icons-sprite.png', -10px -59px);
+			// transition: transform .2s;
+
+			// &: hover {
+
+			// }
+		}
+
+		&-ok {
+			width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "ok"), 'width') + px;
+			height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "ok"), 'height') + px;
+			@include add-img-from-sprite('../../../img/social-icons-sprite.png', -98px -10px);
+			// transition: transform .2s;
+	
+			// &: hover {
+				
+			// }			
+		}
+
+	&-yt {
+		width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "yt"), 'width') + px;
+		height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "yt"), 'height') + px;
+		@include add-img-from-sprite('../../../img/social-icons-sprite.png', -10px -10px);
+		// transition: transform .2s;
+
+		// &: hover {
+			
+		// }
+	}
+
+		&-vk + &-decor {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 46px;
+			height: 46px;
+			@include border-radius(50%);
+			// background-color: $footer-social-btn-bg;
+			transition: all 0.3s;
+		}
+	}
+
+	&-decor {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 46px;
+		height: 46px;
+		@include border-radius(50%);
+		background-color: $footer-social-btn-bg;
+		transition: all 0.3s;
+	}
+
+	
+
+	
+
+	
+}
