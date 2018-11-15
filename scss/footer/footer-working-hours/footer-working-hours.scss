@@ -8,6 +8,7 @@
 	&__block-title {
 		@include reset-padding-margin();
 		margin-bottom: 5px;
+		@include font-family("Intro Regular");
 		font-size: 18px;
 		color: #ffffff;
 	}

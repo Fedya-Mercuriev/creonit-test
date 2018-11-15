@@ -5,6 +5,7 @@
 .footer-working-hours-content {
 	@include reset-padding-margin();
 	margin-bottom: 7px;
+	@include font-family("Opensans Bold");
 	font-size: 100%;
 	color: #ffffff;
 

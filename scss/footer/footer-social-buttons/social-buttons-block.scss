@@ -4,6 +4,11 @@
 
 .social-buttons-legal-info {
 	width: 313px;
+	@include font-family("Opensans Regular");
+
+	&__bold-text {
+		@include font-family("Opensans Bold");
+	}
 }
 
 .social-buttons-block {
