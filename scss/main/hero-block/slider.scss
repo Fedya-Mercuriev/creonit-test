@@ -5,10 +5,10 @@
 $total-slider-cards: 3;
 
 .hero-block {
-  
+
   // position: relative;
   // z-index: 2000;
-  
+
 }
 
 .hero-block-wrapper {
@@ -73,6 +73,7 @@ $total-slider-cards: 3;
   &__offer-title {
     width: 329px;
     @include reset-padding-margin();
+    @include font-family("Intro Regular Alt");
     font-size: $main-slider-offer-title-font-size + px;
     line-height: 1.1;
     @include default-set-for-link();
@@ -81,6 +82,7 @@ $total-slider-cards: 3;
   &__offer-content {
     width: 275px;
     @include reset-padding-margin();
+    @include font-family("Opensans Light");
     margin-top: 25px;
     font-size: $main-slider-offer-paragraph-font-size + px;
     line-height: 1.618;
