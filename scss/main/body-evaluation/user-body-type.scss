@@ -21,7 +21,7 @@
   &__body-type-normal-input:checked + &__body-type-normal-label {
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    color: #000000;
+    color: $main-evaluation-form-radio-input-checked-text-color;
   }
 
   &__body-type-fat-label {
@@ -36,7 +36,7 @@
   &__body-type-fat-input:checked + &__body-type-fat-label {
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    color: #000000;
+    color: $main-evaluation-form-radio-input-checked-text-color;
   }
 
   &__body-type-skinny-label {
@@ -51,6 +51,6 @@
   &__body-type-skinny-input:checked + &__body-type-skinny-label {
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    color: #000000;
+    color: $main-evaluation-form-radio-input-checked-text-color;
   }
 }

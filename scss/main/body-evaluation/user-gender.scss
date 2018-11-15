@@ -17,7 +17,7 @@
   &__gender-male-input:checked + &__gender-male-label {
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    color: #000000;
+    color: $main-evaluation-form-radio-input-checked-text-color;
   }
 
   &__gender-male-input {
@@ -32,7 +32,7 @@
   &__gender-female-input:checked + &__gender-female-label {
     border: 2px solid #ffffff;
     background-color: #ffffff;
-    color: #000000;
+    color: $main-evaluation-form-radio-input-checked-text-color;
   }
 
   &__gender-female-input {
@@ -41,6 +41,7 @@
 }
 
 .section-label {
+  @include font-family("Intro Regular");
   font-size: $main-evaluation-form-label-font-size + px;
   color: #ffffff;
 }

@@ -6,6 +6,7 @@
   @include reset-padding-margin();
   margin-top: 22px;
   margin-bottom: 47px;
+  @include font-family("Intro Light");
   text-align: center;
   font-size: 22px;
   color: $main-general-block-description;

@@ -10,6 +10,7 @@
     @include border-radius(2px);
     margin-top: 38px;
     background-color: transparent;
+		@include font-family("Intro Reguar Alt");
     font-size: 22px;
     color: #ffffff;
     cursor: pointer;
