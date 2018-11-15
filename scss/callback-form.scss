@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 	padding: 6px;
 	background-color: #ffffff;
+
+	&--hidden {
+		display: none;
+	}
 }
 
 .callback-form {
