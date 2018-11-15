@@ -43,6 +43,7 @@
   border: 2px solid #41edff;
   text-align: center;
   @include border-radius(40px);
+  @include font-family("Opensans Bold");
   color: #ffffff;
   cursor: pointer;
 
