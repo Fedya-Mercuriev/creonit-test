@@ -21,46 +21,85 @@ body {
 }
 
 @font-face {
-	font-family: OpenSans Light;
-	src: url(../fonts/Opensans-Light.ttf);
+  font-family: 'Intro Light';
+  src: url("../fonts/intro-light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: OpenSans Regular;
-	src: url(../fonts/Opensans-Regular.ttf);
+  font-family: 'Intro Regular';
+  src: url("../fonts/intro-regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: OpenSans Semibold;
-	src: url(../fonts/Opensans-Semibold.ttf);
+  font-family: 'Intro Bold';
+  src: url("../fonts/intro-bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: OpenSans Bold;
-	src: url(../fonts/Opensans-Bold.ttf);
+  font-family: 'Intro Black';
+  src: url("../fonts/intro-black.woff") format('woff');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: Intro Light;
-	src: url(../fonts/Intro-Light.otf);
+  font-family: 'Intro Light Alt';
+  src: url("../fonts/intro-light-alt.woff") format('woff');
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: Intro Regular;
-	src: url(../fonts/Intro-Regular.ttf);
+  font-family: 'Intro Regular Alt';
+  src: url("../fonts/intro-regular-alt.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: Intro Bold;
-	src: url(../fonts/Intro-Bold.otf);
+  font-family: 'Intro Bold Alt';
+  src: url("../fonts/intro-bold-alt.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: Intro Regular Alt;
-	src: url(../fonts/Intro-Regular-Alt.otf);
+  font-family: 'Intro Black Alt';
+  src: url("../fonts/intro-black-alt.woff") format('woff');
+  font-weight: 800;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: Intro Bold;
-	src: url(../fonts/Intro-Bold-Alt.otf);
+  font-family: 'Opensans Light';
+  src: url("../fonts/opensans-light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Opensans Regular';
+  src: url("../fonts/opensans.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Opensans Semibold';
+  src: url("../fonts/opensans-semibold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Opensans Bold';
+  src: url("../fonts/opensans-bold.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
