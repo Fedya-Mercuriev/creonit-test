@@ -49,34 +49,37 @@ $main-block-title-color: #626161;
 
 // Variables for footer start here
 $footer-gradient-colors: #e23760 0%, #f85980 100%;
-//
-//   // Variables for social buttons block start here
-//   $footer-social-btn-bg: #e33861;
-//   $footer-social-btn-vk-bg-color: #4d7198;
-//   $footer-social-btn-fb-bg-color: #3b5998;
-//   $footer-social-btn-ok-bg-color: #f2720c;
-//   $footer-social-btn-yt-bg-color: #cc181e;
-//   $footer-social-logo-size:
-//   (vk: (
-//         width: 24,
-//         height: 14
-//   ), fb: (
-//         width: 9,
-//         height: 20
-//   ), ok: (
-//         width: 14,
-//         height: 24
-//   ), yt: (
-//         width: 24,
-//         height: 29
-//   ))
-//   // Variables for social buttons block end here
-// // Variables for footer end here
-//
-// // Variables for callback form start here
-// $callback-form-btn-border-color: #1bbbd9;
-// $callback-form-btn-bg: #1bbbd9;
-// $callback-form-btn-hover-border-color: #41edff;
-// $callback-form-btn-hover-bg: #41edff;
-// $callback-form-input-border-color: #b7e5eb;
-// // Variables for callback form end here
+
+  // Variables for social icons in footer start here
+  $footer-social-btn-bg: #e33861;
+  $footer-social-btn-bg-img-size:
+  (vk: (
+    width: 24,
+    height: 14
+    ),
+  fb: (
+    width: 9,
+    height: 20
+    ),
+  ok: (
+    width: 14,
+    height: 24
+    ),
+  yt: (
+    width: 24,
+    height: 29
+    ));
+  $footer-social-btn-vk-bg-color: #4d7198;
+  $footer-social-btn-fb-bg-color: #3b5998;
+  $footer-social-btn-ok-bg-color: #f2720c;
+  $footer-social-btn-yt-bg-color: #cc181e;
+  // Variables for social icons in footer end here
+// Variables for footer end here
+
+// Variables for callback-form start here
+$callback-form-input-border: #b7e5eb;
+$callback-form-btn-bg: #1bbbd9;
+$callback-form-btn-border-color: $callback-form-btn-bg;
+$callback-form-btn-hover-bg: #41edff;
+$callback-form-btn-hover-border-color: $callback-form-btn-hover-bg;
+// Variables for callback-form end here
