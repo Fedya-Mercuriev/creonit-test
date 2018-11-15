@@ -53,6 +53,7 @@
 
   &__banner-text {
     width: 100%;
+    @include font-family("Intro Regular");
     text-align: center;
     font-size: 18px;
   }
