@@ -6,6 +6,7 @@
   position: relative;
   z-index: 1000;
   @include reset-padding-margin();
+  @include font-family("Intro Regular Alt");
   text-align: center;
   color: $main-block-title-color;
   font-size: 34px;
