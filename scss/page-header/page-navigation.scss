@@ -43,6 +43,8 @@ $menu-link-class-name: menu-link;
 
   &__link-text {
     margin-top: 12px;
+    text-transform: uppercase;
+    @include font-family("Intro Regular");
     color: $header-page-navigation-menu-links;
     text-decoration: none;
     font-weight: normal;
@@ -105,4 +107,3 @@ $menu-link-class-name: menu-link;
     align-self: center;
   }
 }
-
