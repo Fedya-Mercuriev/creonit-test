@@ -1,66 +1,77 @@
 function WalkingMan() {
-	this.element =  $('.walking-guy-wrapper');
-	this.guyImg = $(this.element.children('div'));
-	this.startPosition = 0;
-	this.containerWidth;
-	this.transition;
-	this._timer;
+	var element =  $('.walking-man-wrapper'),
+			guyImg = $(element.children('img')),
+			startPosition = 0,
+			containerWidth,
+			transition,
+			_timer;
 
-	this.calcEndPoint = function() {
+	 function calcEndPoint() {
 		// 262 это размах человечка. Оно вычитается для того, чтобы человечек не залезал за экран
-		return this.element.parent().width() - 262;
+		return element.parent().width() - 262;
 	};
 
-	this.flipManImage = function() {
+	function flipManImage(needsFlip) {
 		// Отзеркаливает изображение человечка
-		if (this.guyImg.hasClass('walking-guy-img--flipped')) {
-			this.guyImg.removeClass('walking-guy-img--flipped');
+		if (needsFlip) {
+			guyImg.addClass('walking-man-img--flipped');
 		} else {
-			this.guyImg.addClass('walking-guy-img--flipped');
+			guyImg.removeClass('walking-man-img--flipped');
 		}
 	};
 
-	this.walk = function(interval) {
-		// Здесь хранится сама функция, которая будет обрабатывать ходьбу
-		var walkHandler = $.proxy(function() {
-			this.containerWidth = this.calcEndPoint();
-			if (!(this.currentPosition === this.containerWidth)) {
-				this.flipManImage();
-				this.element.animate({left: this.startPosition}, this.transitionLength * 1000);
-				// this.element.css("transitionDuration", this.transition);
-				// this.element.css("left", this.containerWidth);
-				this.currentPosition = this.containerWidth;
-			} else {
-				this.flipManImage();
-				this.element.animate({left: this.containerWidth}, this.transitionLength * 1000);
-				// this.element.css("transitionDuration", this.transition);
-				// this.element.css("left", this.startPosition);
-				this.currentPosition = this.startPosition;
-			}
-		}, this);
+	// Здесь хранится сама функция, которая будет обрабатывать ходьбу
+	function walkHandler() {
+		// containerWidth = calcEndPoint();
+		if (!(currentPosition === containerWidth)) {
+			element.animate({
+				left: startPosition
+			}, (transitionLength * 1000), function() {
+				setTimeout(function() {
+					flipManImage(true);
+				}, transitionLength * 1000)
+			});
+			currentPosition = containerWidth;
+		} else {
+			element.animate({
+				left: containerWidth
+			}, (transitionLength * 1000), function() {
+				setTimeout(function() {
+					flipManImage(false);
+				}, transitionLength * 1000)
+			});
+			currentPosition = startPosition;
+		}
+	};
 
-		// Обработчик привязывается к таймеру для того, чтобы его можно было написать, 
+	function walk(interval) {
+		// Обработчик привязывается к таймеру для того, чтобы его можно было написать,
 		// но уже с другим значением
 		walkHandler();
-		setTimeout(function() {
-			this._timer = setInterval(walkHandler, interval);
-		}, (interval * 1000) * 2);
+		_timer = setInterval(walkHandler, interval);
+		// setTimeout(function() {
+		//
+		// }, (interval * 1000) * 2);
 	};
 
-	this.calcTransition = function(comtainerWidth) {
+	 function calcTransition(comtainerWidth) {
 		// Ниже находится условный эталон - расстояние, которое человечек пройдет за 1 секунду
 		var MINIMAL_CONTAINER_WIDTH = 220;
-		return (this.containerWidth / MINIMAL_CONTAINER_WIDTH).toFixed(1);
+		return (containerWidth / MINIMAL_CONTAINER_WIDTH).toFixed(1);
 	};
 
-	this.init = function() {
-		this.containerWidth = this.calcEndPoint();
-		this.transitionLength = this.calcTransition(this.containerWidth);
-		// Сразу переворачиваем изображение человечка, чтоб он смотрел по направлению к финальному пункту
-		this.flipManImage();
-		this.currentPosition = this.startPosition;
-		this.walk(this.transitionLength);
+	function init() {
+		// Считаем ширину контейнера
+		containerWidth = calcEndPoint();
+		// Считаем длительност анимации
+		transitionLength = calcTransition(containerWidth);
+		currentPosition = startPosition;
+		// Начинаем ходьбу
+		this.walk(transitionLength);
 	};
+
+	this.init = init;
+	this.walk = walk;
 }
 
 var walkMan = new WalkingMan();
@@ -78,4 +89,4 @@ walkMan.init();
 // 	return function() {
 // 		setInterval(func.bind(self, arguments), interval);
 // 	}
-// } 
+// }
