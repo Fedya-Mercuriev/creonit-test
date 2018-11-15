@@ -3,5 +3,6 @@
 @import '../../sass-components/_functions';
 
 .js-walk-distance {
+	@include font-family("Intro Bold");
 	@include walk-metre-style(20, #1bbbd9);
 }

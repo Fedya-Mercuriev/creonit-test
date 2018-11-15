@@ -18,6 +18,7 @@
 	&__title {
 		@include reset-padding-margin();
 		margin-bottom: 3px;
+		@include font-family("Intro Regular");
 		color: $calories-tabloid-title-color;
 		font-size: 20px;
 		line-height: 1.2;
@@ -25,6 +26,7 @@
 
 	&__text {
 		@include reset-padding-margin();
+		@include font-family("Opensans Regular");
 		font-size: 100%;
 	}
 
