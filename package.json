@@ -1,13 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "creonit",
   "version": "1.0.0",
   "description": "A test assignment for job application",
+=======
+  "name": "creonit-test",
+  "version": "1.0.0",
+  "description": "",
+>>>>>>> 53f5017b4ac2986af255a33149295d8f30af2982
   "main": "index.js",
   "scripts": {
     "gulp": "gulp"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git+ssh://git@github.com/Fedya-Mercuriev/creonit-test.git"
   },
   "author": "Glenn",
@@ -26,5 +33,17 @@
   },
   "dependencies": {
     "npm": "^6.4.1"
+=======
+    "url": "git@github.com:Fedya-Mercuriev/creonit-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "normalize-scss": "^7.0.1"
+>>>>>>> 53f5017b4ac2986af255a33149295d8f30af2982
   }
 }

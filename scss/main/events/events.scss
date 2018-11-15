@@ -1,0 +1,13 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.events {
+  position: relative;
+  padding-bottom: 27px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  background-image: url('../../../img/bg-mountains.jpg');
+  background-position: bottom;
+}

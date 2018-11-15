@@ -1,0 +1,48 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.user-general-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__user-weight {
+    align-items: center;
+  }
+
+  &__user-age {
+    margin-left: 44px;
+  }
+
+  &__user-height {
+    margin-left: 44px;
+  }
+
+  &__label {
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  &__user-type-input {
+    box-sizing: border-box;
+    width: 80px;
+    height: 42px;
+    @include reset-padding-margin();
+    margin-left: 12px;
+    border: 1px solid #0d9bbd;
+    @include border-radius(2px);
+    background-color: $main-evaluation-form-general-info-input-bg;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    @include box-shadow(0px, 0px, 3px, #0d9bbd, true);
+
+    &:focus {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+}

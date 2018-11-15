@@ -1,0 +1,108 @@
+@import '../sass-components/_variables';
+@import '../sass-components/_mixins';
+@import '../sass-components/_functions';
+
+$menu-link-class-name: menu-link;
+
+.page-navigation {
+  margin-top: 17px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: $container-width + px;
+  }
+}
+
+.site-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.site-menu {
+  width: 686px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  list-style: none;
+  @include reset-padding-margin();
+
+  &__menu-item {
+    /// ???
+  }
+}
+
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include default-set-for-link();
+
+  &__link-text {
+    margin-top: 12px;
+    color: $header-page-navigation-menu-links;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  &:hover .#{$menu-link-class-name}__link-text {
+    color: #e34168;
+  }
+
+  &:hover .navigation-icon-wrapper >.navigation-icon {
+    @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-colors-hover);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  &:hover .navigation-icon-wrapper {
+    &::after {
+      transform: scale(0.7, 0.7);
+      -webkit-transform: scale(0.7, 0.7);
+      -ms-transform: scale(0.7, 0.7);
+    }
+  }
+}
+
+.navigation-icon-wrapper {
+  position: relative;
+  padding-bottom: 8px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 5px;
+    z-index: 1;
+    width: 50px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    transition: transform 0.3s;
+  }
+}
+
+.navigation-icon {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  @include gradient($header-page-navigation-menu-icons-gradient-direction, $header-menu-icons-gradient-colors);
+  border-radius: 50%;
+  background-color: blue;
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.3s, background 0.2s;
+  transition: transform 0.3s, background 0.2s;
+  transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
+
+  &__decor-image {
+    align-self: center;
+  }
+}
+

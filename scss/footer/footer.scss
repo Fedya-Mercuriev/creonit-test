@@ -1,0 +1,9 @@
+@import '../sass-components/_variables';
+@import '../sass-components/_mixins';
+@import '../sass-components/_functions';
+
+.footer {
+	padding-top: 45px;
+	padding-bottom: 25px; 
+	@include gradient(left, $footer-gradient-colors);
+}

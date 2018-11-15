@@ -1,0 +1,14 @@
+@import '../sass-components/_variables';
+@import '../sass-components/_mixins';
+@import '../sass-components/_functions';
+
+.legal-info {
+	@include default-set-for-link();
+	text-decoration: underline;
+	font-size: 10px;
+
+	&__bold-text {
+		font-weight: bold;
+		text-decoration: none;
+	}
+}

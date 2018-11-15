@@ -1,13 +1,66 @@
-@import "node_modules/normalize-scss/sass/normalize/_import-now";
+// @import "node_modules/normalize-scss/sass/normalize/_import-now";
 
 // End of normalize
 
 html {
-  
+  font-size: 14px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
+  min-width: 1018px;
+  min-height: 100%;
   padding: 0;
   margin: 0;
   background-color: #fff;
+}
+
+.block-scroll {
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: OpenSans Light;
+	src: url(../fonts/Opensans-Light.ttf);
+}
+
+@font-face {
+	font-family: OpenSans Regular;
+	src: url(../fonts/Opensans-Regular.ttf);
+}
+
+@font-face {
+	font-family: OpenSans Semibold;
+	src: url(../fonts/Opensans-Semibold.ttf);
+}
+
+@font-face {
+	font-family: OpenSans Bold;
+	src: url(../fonts/Opensans-Bold.ttf);
+}
+
+@font-face {
+	font-family: Intro Light;
+	src: url(../fonts/Intro-Light.otf);
+}
+
+@font-face {
+	font-family: Intro Regular;
+	src: url(../fonts/Intro-Regular.ttf);
+}
+
+@font-face {
+	font-family: Intro Bold;
+	src: url(../fonts/Intro-Bold.otf);
+}
+
+@font-face {
+	font-family: Intro Regular Alt;
+	src: url(../fonts/Intro-Regular-Alt.otf);
+}
+
+@font-face {
+	font-family: Intro Bold;
+	src: url(../fonts/Intro-Bold-Alt.otf);
 }

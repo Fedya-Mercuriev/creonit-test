@@ -6,7 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фитнес-клуб Максима</title>
   <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/centrifying-block.css">
   <link rel="stylesheet" href="css/page-header/contact-info-top.css">
+  <link rel="stylesheet" href="css/page-header/page-navigation.css">
+  <link rel="stylesheet" href="css/main/main.css">
+  <link rel="stylesheet" href="css/main/hero-block/slider.css">
+  <link rel="stylesheet" href="css/main/events/events.css">
+  <!-- <link rel="stylesheet" href="css/main/events/events-wrapper.css"> -->
+  <link rel="stylesheet" href="css/main/events/block-title.css">
+  <link rel="stylesheet" href="css/main/events/ski-guy.css">
+  <link rel="stylesheet" href="css/main/events/event-banners-wrapper.css">
+  <link rel="stylesheet" href="css/main/events/event-banner-wrapper.css">
+  <link rel="stylesheet" href="css/main/events/event-banner.css">
+  <!-- <link rel="stylesheet" href="css/main/events/event-date.css"> -->
+  <!-- <link rel="stylesheet" href="css/main/events/mountains-bg-wrapper.css"> -->
+  <link rel="stylesheet" href="css/main/body-evaluation/body-shape-evaluation-block.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/block-title.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/general-block-description.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form-wrapper.css">
+  <!-- <link rel="stylesheet" href="css/main/body-evaluation/evaluation-form.css"> -->
+  <link rel="stylesheet" href="css/main/body-evaluation/user-general-info.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/user-gender.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/user-body-type.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/submit-button-wrapper.css">
+  <link rel="stylesheet" href="css/main/body-evaluation/submit-btn.css">
+  <link rel="stylesheet" href="css/main/calories-you-could-burn-block/calories-you-could-burn-block.css">
+  <link rel="stylesheet" href="css/main/calories-you-could-burn-block/calories-tabloid-wrapper.css">
+  <link rel="stylesheet" href="css/main/calories-you-could-burn-block/calories-tabloid.css">
+  <link rel="stylesheet" href="css/main/calories-you-could-burn-block/js-walk-distance.css">
+  <link rel="stylesheet" href="css/main/calories-you-could-burn-block/js-calories-burnt.css">
+  <link rel="stylesheet" href="css/main/scroll-to-top.css">
+  <link rel="stylesheet" href="css/footer/footer.css">
+  <link rel="stylesheet" href="css/footer/footer-content-wrapper.css">
+  <link rel="stylesheet" href="css/footer/footer-column-general-info.css">
+  <link rel="stylesheet" href="css/footer/footer-copyright.css">
+  <link rel="stylesheet" href="css/footer/footer-contact-info.css">
+  <link rel="stylesheet" href="css/footer/footer-working-hours/footer-working-hours.css">
+  <link rel="stylesheet" href="css/footer/footer-working-hours/footer-working-hours-content.css">
+  <link rel="stylesheet" href="css/footer/footer-social-buttons/social-buttons-block.css">
+  <link rel="stylesheet" href="css/footer/footer-working-hours/footer-working-hours-content.css">
+  <link rel="stylesheet" href="css/footer/legal-info.css">
+  <link rel="stylesheet" href="css/callback-form.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <!-- PAGE HEADER STARTS HERE -->
@@ -15,22 +56,25 @@
     <!-- A SECTION WITH CONTACT INFO AT THE TOP OF THE PAGE STARTS HERE -->
     <div class="contact-info-top">
       <ul class="contact-info-list">
-        <li class="contact-info-list__item">
-          <i class="calendar-icon">
-            <!-- Add text content "!" via css to warning icon -->
-            <i class="calendar-icon__alert-icon"></i>
-          </i>
-          <a href="" class="link-schedule">Расписание занятий</a>
+        <li class="contact-info-list__item contact-info-list__item-btn">
+          <a href="" class="contact-info-list__link-schedule">
+            <span class="calendar-icon">
+              <span class="calendar-icon__alert-icon"></span>
+            </span>
+            Расписание занятий
+          </a>
         </li>
         <li class="contact-info-list__item">
-          <a href="tel:+73852696965" class="link-tel-number">+7 3852 69-69-65</a>
+          <a href="tel:+73852696965" class="contact-info-list__link-tel-number"><span class="contact-info-list__tel-number-region-code">+7 3852</span> 69-69-65</a>
         </li>
         <li class="contact-info-list__item">
-          <a href="tel:+73852283028" class="link-tel-number-alt">+7 3852 28-30-28</a>
+          <a href="tel:+73852283028" class="contact-info-list__link-tel-number-alt"><span class="contact-info-list__tel-number-region-code">+7 3852</span> 28-30-28</a>
         </li>
-        <li class="contact-info-list__item">
-          <i class="telephone-icon"></i>
-          <a href="" class="link-order-phone-call-btn">Заказать звонок</a>
+        <li class="contact-info-list__item contact-info-list__item-btn">
+          <a href="" class="contact-info-list__link-order-phone-call-btn">
+            <span class="telephone-icon"></span>
+            Заказать звонок
+          </a>
         </li>
       </ul>
     </div>
@@ -38,57 +82,66 @@
 
 
     <!-- SITE MENU STARTS HERE -->
-    <div class="page-navigation">
-      <a href="#" class="site-logo">
-        <picture>
-          <!-- <source media="(ming-width)" srcset=""> -->
+    <div class="page-navigation centrifying-block">
+      <div class="page-navigation-wrapper">
+        <a href="#" class="site-logo">
           <img src="img/site-logo.png" alt="Логотип сайта">
-        </picture>
-      </a>
-      <nav class="site-menu-wrapper">
-        <ul class="site-menu">
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/club.png" alt="Наш клуб">
-              </i>
-              Наш клуб
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/card.png" alt="Клубные карты">
-              </i>
-              Клубные карты
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/life.png" alt="Максима Life">
-              </i>
-              Максима Life
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/team.png" alt="Команда">
-              </i>
-              Команда
-            </a>
-          </li>
-          <li class="site-menu__menu-item">
-            <a href="" class="menu-link">
-              <i class="navigation-icon">
-                <img src="img/menu-icons/contacts.png" alt="Контакты">
-              </i>
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
+        </a>
+        <nav class="site-menu-wrapper">
+          <ul class="site-menu">
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/club.png" alt="Наш клуб">
+                  </i>
+                </div>
+                <span class="menu-link__link-text">Наш клуб</span>
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/card.png" alt="Клубные карты">
+                  </i>
+                </div>
+                <span class="menu-link__link-text">Клубные карты</span>
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/life.png" alt="Максима Life">
+                  </i>
+                </div>
+                <span class="menu-link__link-text">Максима Life</span>
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/team.png" alt="Команда">
+                  </i>
+                </div>
+                <span class="menu-link__link-text">Команда</span>
+              </a>
+            </li>
+            <li class="site-menu__menu-item">
+              <a href="" class="menu-link">
+                <div class="navigation-icon-wrapper">
+                  <i class="navigation-icon">
+                    <img class="navigation-icon__decor-image" src="img/menu-icons/contacts.png" alt="Контакты">
+                  </i>
+                </div>
+                <span class="menu-link__link-text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- SITE MENU ENDS HERE -->
 
@@ -102,19 +155,20 @@
   <main class="main">
 
     <!-- HERO BLOCK WITH SLIDERS STARTS HERE -->
-    <div class="hero-block">
-      <div class="slider">
+    <div class="hero-block centrifying-block">
+      <div class="hero-block-wrapper">
+        <div class="slider">
 
         <!-- SLIDER SECTION STARTS HERE -->
-        <article class="slider-section">
-          <a href="" class="slider-section__link-to-offer">
+        <article class="slider-section" data-slider-section-number="1">
+          <a href="" class="slider-section__link-to-offer" >
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
-            <a href="#" class="slider-section__link-to-offer">
+            <a href="#" class="offer-description__link-to-offer">
               <h3 class="offer-description__offer-title">Карта на полгода за 9900!</h3>
+              <p class="offer-description__offer-content">21 декабря в фитнес-клубе Максима прошли соревнования по армрестлингу.</p>
             </a>
-            <p class="offer-description__offer-content">21 декабря в фитнес-клубе Максима прошли соревнования по армрестлингу.</p>
             <div class="slider-controls">
               <a href="#" class="slider-controls__go-to-prev-offer"></a>
               <a href="#" class="slider-controls__go-to-next-offer"></a>
@@ -124,15 +178,15 @@
         <!-- SLIDER SECTION ENDS HERE -->
 
         <!-- SLIDER SECTION STARTS HERE -->
-        <article class="slider-section">
+        <article class="slider-section" data-slider-section-number="2">
           <a href="" class="slider-section__link-to-offer">
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
-            <a href="#" class="slider-section__link-to-offer">
+            <a href="#" class="offer-description__link-to-offer">
               <h3 class="offer-description__offer-title">"Максима" приглашает</h3>
+              <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             </a>
-            <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             <div class="slider-controls">
               <a href="#" class="slider-controls__go-to-prev-offer"></a>
               <a href="#" class="slider-controls__go-to-next-offer"></a>
@@ -142,15 +196,15 @@
         <!-- SLIDER SECTION STARTS HERE -->
 
         <!-- SLIDER SECTION STARTS HERE -->
-        <article class="slider-section">
+        <article class="slider-section" data-slider-section-number="3">
           <a href="" class="slider-section__link-to-offer">
             <img src="" alt="" class="slider-section__offer-bg">
           </a>
           <section class="offer-description">
-            <a href="#" class="slider-section__link-to-offer">
+            <a href="#" class="offer-description__link-to-offer">
               <h3 class="offer-description__offer-title">"Максима" приглашает</h3>
+              <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             </a>
-            <p class="offer-description__offer-content">Каждый ребенок найдет занятие по душе и темпераменту!</p>
             <div class="slider-controls">
               <a href="#" class="slider-controls__go-to-prev-offer"></a>
               <a href="#" class="slider-controls__go-to-next-offer"></a>
@@ -159,6 +213,7 @@
         </article>
         <!-- SLIDER SECTION ENDS HERE -->
 
+      </div>
       </div>
     </div>
     <!-- HERO BLOCK WITH SLIDERS ENDS HERE -->
@@ -166,72 +221,77 @@
 
     <!-- EVENTS BLOCK STARTS HERE -->
     <div class="events">
-      <h2 class="block-title">События декабря</h2>
-      <div class="js-ski-guy"></div>
+      <div class="centrifying-block">
+        <h2 class="block-title">События декабря</h2>
 
       <!-- EVENTS BANNER STARTS HERE -->
-      <div class="events-wrapper">
-        <div class="event-block">
-          <div class="event-block__date">
-            <span class="date-day">10</span>
-            <span class="date-month">декабря</span>
+      <div class="event-banners-wrapper">
+          <div class="js-ski-guy"></div>
+          <div class="events-banner-wrapper" data-event-num="1">
+            <div class="event-banner">
+              <div class="event-banner__event-date">
+                <span class="event-banner__date-day">10</span>
+                <span class="event-banner__date-month">декабря</span>
+              </div>
+              <a href="#" class="event-banner__banner-front">
+                <p class="event-banner__banner-text">
+                  Катаемся на лыжах
+                </p>
+              </a>
+              <div class="event-banner__banner-back"></div>
+              <span class="event-banner__banner-pillar-front"></span>
+              <span class="event-banner__banner-pillar-back"></span>
+            </div>
           </div>
-          <a href="#" class="event-block__event-banner-front">
-            <p>
-              Катаемся на лыжах
-            </p>
-          </a>
-          <div class="event-block__event-banner-back"></div>
-          <span class="event-block__event-banner-pillar-front"></span>
-          <span class="event-block__event-banner-pillar-back"></span>
-        </div>
-      </div>
-      <!-- EVENTS BANNER ENDS HERE -->
+          <!-- EVENTS BANNER ENDS HERE -->
 
-      <!-- EVENTS BANNER STARTS HERE -->
-      <div class="events-wrapper">
-        <div class="event-block">
-          <div class="event-block__date">
-            <span class="date-day">21</span>
-            <span class="date-month">декабря</span>
+          <!-- EVENTS BANNER STARTS HERE -->
+          <div class="events-banner-wrapper" data-event-num="2">
+            <div class="event-banner">
+              <div class="event-banner__event-date">
+                <span class="event-banner__date-day">21</span>
+                <span class="event-banner__date-month">декабря</span>
+              </div>
+              <a href="#" class="event-banner__banner-front">
+                <p class="event-banner__banner-text">
+                  Турнир по армрестлингу
+                </p>
+              </a>
+              <div class="event-banner__banner-back"></div>
+              <span class="event-banner__banner-pillar-front"></span>
+              <span class="event-banner__banner-pillar-back"></span>
+            </div>
           </div>
-          <a href="#" class="event-block__event-banner-front">
-            <p>
-              Турнир по армрестлингу
-            </p>
-          </a>
-          <div class="event-block__event-banner-back"></div>
-          <span class="event-block__event-banner-pillar-front"></span>
-          <span class="event-block__event-banner-pillar-back"></span>
-        </div>
-      </div>
-      <!-- EVENTS BANNER ENDS HERE -->
+          <!-- EVENTS BANNER ENDS HERE -->
 
-      <!-- EVENTS BANNER STARTS HERE -->
-      <div class="events-wrapper">
-        <div class="event-block">
-          <div class="event-block__date">
-            <span class="date-day">24</span>
-            <span class="date-month">декабря</span>
+          <!-- EVENTS BANNER STARTS HERE -->
+          <div class="events-banner-wrapper" data-event-num="3">
+            <div class="event-banner">
+              <div class="event-banner__event-date">
+                <span class="event-banner__date-day">24</span>
+                <span class="event-banner__date-month">декабря</span>
+              </div>
+              <a href="#" class="event-banner__banner-front">
+                <p class="event-banner__banner-text">
+                  Новый год в "Максиме"
+                </p>
+              </a>
+              <div class="event-banner__banner-back"></div>
+              <span class="event-banner__banner-pillar-front"></span>
+              <span class="event-banner__banner-pillar-back"></span>
+            </div>
           </div>
-          <a href="#" class="event-block__event-banner-front">
-            <p>
-              Новый год в "Максиме"
-            </p>
-          </a>
-          <div class="event-block__event-banner-back"></div>
-          <span class="event-block__event-banner-pillar-front"></span>
-          <span class="event-block__event-banner-pillar-back"></span>
         </div>
-      </div>
       <!-- EVENTS BANNER ENDS HERE -->
-
+      </div>
+      <!-- <div class="events__mountains-bg-wrapper"> -->
+      </div>
     </div>
     <!-- EVENTS BLOCK ENDS HERE -->
 
 
     <!-- BODY SHAPE EVALUATION (MEASURES) BLOCK STARTS HERE -->
-    <div class="body-shape-evaluation-block">
+    <div class="body-shape-evaluation-block centrifying-block">
       <h2 class="block-title">Взвесьте себя и узнайте, что делать</h2>
       <p class="general-block-description">Узнайте, каким должен быть ваш вес, учитывая рост, возраст и род занятий.</p>
       <div class="evaluation-form-wrapper">
@@ -240,43 +300,53 @@
           <!-- GENERAL INPUTS (WEIGHT, AGE, HEIGHT) START HERE -->
           <div class="user-general-info">
             <div class="user-general-info__user-weight">
-              <label class="evaluation-form__label" for="user-weight">Вес:</label>
-              <input id="user-weight" type="number" class="evaluation-form__user-type-input" name="weight" value="60">
+              <label class="user-general-info__label" for="user-weight">Вес:</label>
+              <input id="user-weight" type="text" class="user-general-info__user-type-input" name="weight" value="60">
             </div>
             <div class="user-general-info__user-age">
-              <label class="evaluation-form__label" for="user-age">Возраст:</label>
-              <input id="user-age" type="number" class="evaluation-form__user-type-input" name="age" value="25">
+              <label class="user-general-info__label" for="user-age">Возраст:</label>
+              <input id="user-age" type="text" class="user-general-info__user-type-input" name="age" value="25">
             </div>
             <div class="user-general-info__user-height">
-              <label class="evaluation-form__label" for="user-height">Рост:</label>
-              <input id="user-height" type="number" class="evaluation-form__user-type-input" name="height" value="170">
+              <label class="user-general-info__label" for="user-height">Рост:</label>
+              <input id="user-height" type="text" class="user-general-info__user-type-input" name="height" value="170">
             </div>
           </div>
           <!-- GENERAL INPUTS (WEIGHT, AGE, HEIGHT) END HERE -->
 
           <!-- GENDER INPUTS START HERE -->
           <div class="user-gender">
-            <label class="evaluation-form__section-label">Кто вы?</label>
-            <label for="gender-male"></label>
-            <input type="radio" name="gender" value="male" id="gender-male" checked>Мужчина
-            <label for="gender-female"></label>
-            <input type="radio" name="gender" value="female" id="gender-female">Женщина
+            <label class="section-label">Кто вы?</label>
+            <!-- <div class="gender-male-input-wrapper"> -->
+              <input class="user-gender__gender-male-input" type="radio" name="gender" value="male" id="gender-male" checked>
+              <label for="gender-male" class="user-gender__gender-male-label">
+                Мужчина
+              </label>
+            <!-- </div> -->
+            <!-- <div class="gender-female-input-wrapper"> -->
+              <input class="user-gender__gender-female-input" type="radio" name="gender" value="female" id="gender-female">
+              <label for="gender-female" class="user-gender__gender-female-label">
+                Женщина
+              </label>
+            <!-- </div> -->
           </div>
           <!-- GENDER INPUTS END HERE -->
 
           <!-- BODY TYPE INPUTS START HERE -->
           <div class="user-body-type">
-            <label class="evaluation-form__section-label">Телосложение:</label>
-            <label for="body-type-normal">Нормальное</label>
-            <input type="radio" name="body-type" value="normal" id="body-type-normal" checked>
-            <label for="body-type-fat">Полное</label>
-            <input type="radio" name="body-type" value="fat" id="body-type-fat">
-            <label for="body-type-skinny">Хрубкое</label>
-            <input type="radio" name="body-type" value="skinny" id="body-type-skinny">
+            <label class="section-label">Телосложение:</label>
+            <input class="user-body-type__body-type-normal-input" type="radio" name="body-type" value="normal" id="body-type-normal" checked>
+            <label class="user-body-type__body-type-normal-label" for="body-type-normal">Нормальное</label>
+            <input class="user-body-type__body-type-fat-input" type="radio" name="body-type" value="fat" id="body-type-fat">
+            <label class="user-body-type__body-type-fat-label" for="body-type-fat">Полное</label>
+            <input class="user-body-type__body-type-skinny-input" type="radio" name="body-type" value="skinny" id="body-type-skinny">
+            <label class="user-body-type__body-type-skinny-label" for="body-type-skinny">Хрубкое</label>
           </div>
-          <!-- GENDER INPUTS END HERE -->
+          <!-- BODY TYPE INPUTS END HERE -->
 
-          <button class="evaluation-form__submit-btn" type="submit">Рассчитать</button>
+          <div class="submit-button-wrapper">
+            <button class="submit-btn" type="submit">Рассчитать</button>
+          </div>
         </form>
       </div>
     </div>
@@ -285,18 +355,31 @@
 
     <!-- CALORIES BURNT TABLOID STARTS HERE -->
     <div class="calories-you-could-burn-block">
-      <div class="calories-tabloid">
-        <div class="calories-tabloid__sign">
-          <p class=""><strong>Пока вы находитесь на сайте,</strong>
-            человечек уже прошел <span class="js-walk-distance">0</span> м <br>
-            и, между прочим, потратил <span class="js-calories-burnt">0</span> ккал</p>
+      <div class="centrifying-block">
+        <div class="calories-tabloid-wrapper">
+          <div class="calories-tabloid">
+            <div class="calories-tabloid__sign">
+              <h6 class="calories-tabloid__title">Пока вы находитесь на сайте,</h6>
+              <p class="calories-tabloid__text">
+                человечек уже прошел <span class="js-walk-distance">0</span> м <br>
+                и, между прочим, потратил <span class="js-calories-burnt">0</span> ккал
+              </p>
+            </div>
+          </div>
         </div>
+          <div class="walking-guy-wrapper">
+            <div class="walking-guy-img-block"></div>
+          </div>
       </div>
-      <div class="walking-guy"></div>
     </div>
     <!-- CALORIES BURNT TABLOID ENDS HERE -->
 
-    <a href="#" class="scroll-to-top-button"></a>
+    <a href="#" class="scroll-to-top-button">
+      <div class="arrow-icons-wrapper">
+        <i class="arrow-icons-wrapper__arrow-icon"></i>
+        <i class="arrow-icons-wrapper__arrow-icon"></i>
+      </div>
+    </a>
   </main>
   <!-- MAIN BLOCK ENDS HERE -->
 
@@ -305,9 +388,9 @@
 
   <!-- FOOTER STARTS HERE -->
   <footer class="footer">
-    <div class="footer-content-wrapper">
-
-      <!-- FOOTER GENERAL INFO BLOCK STARTS HERE -->
+    <div class="centrifying-block">
+      <div class="footer-content-wrapper">
+        <!-- FOOTER GENERAL INFO BLOCK STARTS HERE -->
       <div class="footer-column-general-info">
         <p class="footer-copyright">2015-2018, Фитнес-клуб «Максима»</p>
         <div class="footer-contact-info">
@@ -315,55 +398,79 @@
             Барнаул, ул. Лазурная, 7
           </a>
           <a href="tel:+73852696965" class="footer-contact-info__phone-number">+7 3852 69-69-65</a>
-          <a href="tel:+73852283028" class="footer-contact-info__phonenumber-alt">+7 3852 28-30-28</a>
+          <a href="tel:+73852283028" class="footer-contact-info__phone-number-alt">+7 3852 28-30-28</a>
         </div>
       </div>
-      <!-- FOOTER GENERAL INFO BLOCK STARTS HERE -->
+      <!-- FOOTER GENERAL INFO BLOCK ENDS HERE -->
 
 
       <!-- WORKING HOURS SCHEDULE BLOCK STARTS HERE -->
       <div class="footer-working-hours">
         <h6 class="footer-working-hours__block-title">Режим работы</h6>
-        <p class="footer-working-hours__content">
-          <span class="footer-working-hours__week-day">Пн-Пт:</span>
-          <span class="footer-working-hours__time">7:00 - 23:00</span>
+        <p class="footer-working-hours-content">
+          <span class="footer-working-hours-content__week-day">Пн-Пт:</span>
+          <span class="footer-working-hours-content__time">7:00 - 23:00</span>
         </p>
-        <p class="footer-working-hours__content">
-          <span class="footer-working-hours__week-day">Сб:</span>
-          <span class="footer-working-hours__time">8:00 - 22:00</span>
+        <p class="footer-working-hours-content">
+          <span class="footer-working-hours-content__week-day">Сб:</span>
+          <span class="footer-working-hours-content__time">8:00 - 22:00</span>
         </p>
-        <p class="footer-working-hours__content">
-          <span class="footer-working-hours__week-day">Вс:</span>
-          <span class="footer-working-hours__time">9:00 - 21:00</span>
+        <p class="footer-working-hours-content">
+          <span class="footer-working-hours-content__week-day">Вс:</span>
+          <span class="footer-working-hours-content__time">9:00 - 21:00</span>
         </p>
       </div>
-      <!-- WORKING HOURS SCHEDULE BLOCK STARTS HERE -->
+      <!-- WORKING HOURS SCHEDULE BLOCK ENDS HERE -->
 
 
       <!-- SOCIAL BUTTONS AND LEGAL INFO BLOCK STARTS HERE -->
       <div class="social-buttons-legal-info">
         <div class="social-buttons-block">
           <ul class="social-buttons-list">
-            <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__vk">Вконтакте</a>
+            <li class="social-buttons-list__item social-button">
+                <a href="" class="social-button__link social-button__link-vk">Вконтакте</a>
+                <div class="social-button-decor"></div>
             </li>
-            <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__fb">Facebook</a>
+            <li class="social-buttons-list__item social-button">
+                <a href="" class="social-button__link social-button__link-fb">Facebook</a>
+                <div class="social-button-decor"></div>
             </li>
-            <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__ok">Одноклассники</a>
+            <li class="social-buttons-list__item social-button">
+                <a href="" class="social-button__link social-button__link-ok">Одноклассники</a>
+                <div class="social-button-decor"></div>
             </li>
-            <li class="social-buttons-list__item">
-              <a href="" class="social-buttons-list__yt">YouTube</a>
+            <li class="social-buttons-list__item social-button">
+                <a href="" class="social-button__link social-button__link-yt">YouTube</a>
+                <div class="social-button-decor"></div>
             </li>
           </ul>
         </div>
-        <a href="" class="legal-info">Правила клуба (публичная оферта)</a>
+        <a href="" class="legal-info">
+          <span class="legal-info__bold-text">
+            Правила клуба
+          </span> (публичная оферта)</a>
       </div>
-      <!-- SOCIAL BUTTONS AND LEGAL INFO BLOCK STARTS HERE -->
+      </div>
+      <!-- SOCIAL BUTTONS AND LEGAL INFO BLOCK ENDS HERE -->
 
     </div>
   </footer>
+  <div class="callback-form-overlay"></div>
+  <div class="callback-form-wrapper callback-form-wrapper--hidden">
+    <div class="callback-form">
+      <div class="close-form-btn">
+        <i class="close-form-btn__stroke-down"></i>
+        <i class="close-form-btn__stroke-up"></i>
+      </div>
+      <div class="callback-form__title"></div>
+      <div class="callback-form__content"></div>
+    </div>
+  </div>
   <!-- FOOTER ENDS HERE -->
+  <!-- <script src="js/add-calendar-alert.js"></script>
+  <script src="js/block-scroll.js"></script>
+  <script src="js/show-callback-form.js"></script> -->
+  <script type="text/javascript" src="js/walking-guy-animation.js"></script>
+  <script type="text/javascript" src="js/calories-steps.js"></script>
 </body>
 </html>

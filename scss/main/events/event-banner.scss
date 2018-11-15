@@ -1,0 +1,104 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.event-banner {
+  position: relative;
+  width: 230px;
+
+  &__event-date {
+    position: relative;
+    top: -17px;
+    left: 0;
+    z-index: 2500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    transform: skewY(-10deg);
+    background-color: $main-banner-bg;
+    text-align: center;
+  }
+
+  &__date-day {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__date-month {
+    display: none;
+  }
+
+  &__banner-front {
+    box-sizing: border-box;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85px;
+    padding: 25px 31px;
+    background-color: $main-banner-front-bg;
+    @include default-set-for-link();
+    transform: skewY(-10deg);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__banner-text {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__banner-back {
+    position: absolute;
+    top: 9px;
+    z-index: 1000;
+    box-sizing: border-box;
+    width: 224px;
+    height: 54px;
+    background-color: $main-banner-back-bg;
+    transform: skewY(10deg);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 37px;
+      right: -6px;
+      display: block;
+      width: 6px;
+      height: 11px;
+      background-color: $main-banner-back-bg;
+      transform: skewY(-58deg);
+    }
+  }
+
+  &__banner-pillar-front {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    z-index: 1900;
+    display: block;
+    width: 4px;
+    height: 271px;
+    background-color: $main-banner-pillar-color;
+  }
+
+  &__banner-pillar-back {
+    position: relative;
+    top: -40px;
+    left: 20px;
+    z-index: 1000;
+    display: block;
+    width: 4px;
+    height: 257px;
+    background-color: $main-banner-pillar-color;
+  }
+}

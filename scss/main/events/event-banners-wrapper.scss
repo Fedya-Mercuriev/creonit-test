@@ -1,0 +1,13 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.event-banners-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: $container-width + px;
+  margin-top: 55px;
+  padding-bottom: 23px;
+}

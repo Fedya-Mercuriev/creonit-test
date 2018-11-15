@@ -1,0 +1,11 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.evaluation-form-wrapper {
+  box-sizing: border-box;
+  width: $container-width + px;
+  padding: 49px 125px 52px 144px;
+  border-radius: 2px;
+  @include gradient(60deg, $main-evaluation-form-bg-gradient-color);
+}

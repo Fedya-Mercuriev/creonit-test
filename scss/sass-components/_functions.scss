@@ -1,5 +1,6 @@
-@function calculate-typography($font-size, $kerning) {
-  @return
-    font-size: $font-size;
-    line-height: $kerning / $font-size;
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
 }

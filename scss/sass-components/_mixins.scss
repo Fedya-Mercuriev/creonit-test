@@ -1,0 +1,65 @@
+@import '_variables';
+@import '_functions';
+
+@mixin default-set-for-link() {
+  color: #fff;
+  text-decoration: none;
+}
+
+@mixin reset-padding-margin() {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin form-label-style() {
+  box-sizing: border-box;
+  width: 180px;
+  padding: 12px 0 15px 0;
+  border: 2px solid #41edff;
+  text-align: center;
+  @include border-radius(40px);
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #41edff;
+  }
+}
+
+@mixin walk-metre-style($font-size, $color) {
+  font-size: $font-size + px;
+  font-weight: bold;
+  color: $color;
+  line-height: 1
+}
+
+@mixin add-img-from-sprite($img-url, $position) {
+  background-image: url('#{$img-url}');
+  background-position: $position;
+  background-repeat: no-repeat;
+}

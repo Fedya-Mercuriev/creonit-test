@@ -1,0 +1,7 @@
+@import '../../sass-components/_variables';
+@import '../../sass-components/_mixins';
+@import '../../sass-components/_functions';
+
+.js-calories-burnt {
+	@include walk-metre-style(20, #1bbbd9);
+}
