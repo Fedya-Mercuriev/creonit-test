@@ -12,9 +12,9 @@ sass.compiler = require('node-sass');
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./scss/**/*.scss', ['sass']);
+  gulp.watch('./scss/**/*.scss', gulp.series('sass'));
 });
 
   gulp.task('watch', function() {
-    gulp.watch('./scss/**/*.scss', ['sass']);
+    gulp.watch('./scss/**/*.scss', gulp.series('sass'));
   });

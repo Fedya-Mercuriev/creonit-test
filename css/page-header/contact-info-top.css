@@ -1,9 +1,105 @@
 .contact-info-top {
+  display: flex;
+  justify-content: center;
+  height: 50px;
   background-color: #e33962; }
 
 .contact-info-list {
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   width: 978px;
   padding: 0;
   margin: 0;
   list-style-type: none; }
+  .contact-info-list__item {
+    display: flex;
+    align-items: stretch; }
+  .contact-info-list__item-btn {
+    background-color: #ce365a; }
+  .contact-info-list__link-schedule {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 181px;
+    padding: 0 31px 0 18px;
+    font-size: 12px;
+    line-height: 1.66667;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .contact-info-list__link-schedule:hover {
+      text-decoration: underline; }
+  .contact-info-list__link-tel-number {
+    align-self: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold; }
+  .contact-info-list__link-tel-number-alt {
+    align-self: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold; }
+  .contact-info-list__tel-number-region-code {
+    color: #ffa3b9;
+    font-size: 14px;
+    line-height: 1.42857;
+    font-weight: bold; }
+  .contact-info-list__item-order-phone-call {
+    background-color: #ce365a; }
+  .contact-info-list__link-order-phone-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 158px;
+    padding: 0 41px 0 30px;
+    font-size: 12px;
+    line-height: 1.66667;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .contact-info-list__link-order-phone-call-btn:hover {
+      text-decoration: underline; }
+
+.calendar-icon {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 29px;
+  background-image: url("../../img/contact-info-top/contact-info-icons-sprite.png");
+  background-position: -5px -5px;
+  background-repeat: no-repeat; }
+  .calendar-icon__alert-icon {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: -8px;
+    left: 18px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center; }
+    .calendar-icon__alert-icon::after {
+      content: "!";
+      display: inline;
+      color: #e33962;
+      font-weight: bold; }
+    .calendar-icon__alert-icon--visible {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around; }
+    .calendar-icon__alert-icon--hidden {
+      display: none; }
+
+.telephone-icon {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../img/contact-info-top/contact-info-icons-sprite.png");
+  background-position: -42px -5px;
+  background-repeat: no-repeat; }

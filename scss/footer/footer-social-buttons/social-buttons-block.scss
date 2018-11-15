@@ -43,7 +43,7 @@
 		&:hover .social-button__link-fb + .social-button-decor {
 			background-color: $footer-social-btn-fb-bg-color;
 		}
-		
+
 		&:hover .social-button__link-ok + .social-button-decor {
 			background-color: $footer-social-btn-ok-bg-color;
 		}
@@ -78,19 +78,19 @@
 		opacity: 1;
 
 		&-vk {
-			width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "vk"), 'width') + px;
-			height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "vk"), 'height') + px;
+			width: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "vk"), 'width') + px;
+			height: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "vk"), 'height') + px;
 			@include add-img-from-sprite('../../../img/social-icons-sprite.png', -54px -10px);
 			// transition: transform .2s;
-	
+
 			// &: hover {
-	
+
 			// }
 		}
 
 		&-fb {
-			width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "fb"), 'width') + px;
-			height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "fb"), 'height') + px;
+			width: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "fb"), 'width') + px;
+			height: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "fb"), 'height') + px;
 			@include add-img-from-sprite('../../../img/social-icons-sprite.png', -10px -59px);
 			// transition: transform .2s;
 
@@ -100,24 +100,24 @@
 		}
 
 		&-ok {
-			width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "ok"), 'width') + px;
-			height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "ok"), 'height') + px;
+			width: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "ok"), 'width') + px;
+			height: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "ok"), 'height') + px;
 			@include add-img-from-sprite('../../../img/social-icons-sprite.png', -98px -10px);
 			// transition: transform .2s;
-	
+
 			// &: hover {
-				
-			// }			
+
+			// }
 		}
 
 	&-yt {
-		width: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "yt"), 'width') + px;
-		height: map-deep-get(map-deep-get($footer-social-btn-bg-img-size, "yt"), 'height') + px;
+		width: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "yt"), 'width') + px;
+		height: map-deep-get(map-deep-get($footer-social-btn-bg-logo-size, "yt"), 'height') + px;
 		@include add-img-from-sprite('../../../img/social-icons-sprite.png', -10px -10px);
 		// transition: transform .2s;
 
 		// &: hover {
-			
+
 		// }
 	}
 
@@ -144,9 +144,9 @@
 		transition: all 0.3s;
 	}
 
-	
 
-	
 
-	
+
+
+
 }
