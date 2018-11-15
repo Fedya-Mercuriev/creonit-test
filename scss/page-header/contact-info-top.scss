@@ -34,6 +34,7 @@
     justify-content: space-between;
     width: 181px;
     padding: 0 31px 0 18px;
+    @include font-family("Intro Regular");
     font-size: $header-contact-info-bar-buttons-font-size + px;
     line-height: $header-contact-info-bar-items-kerning / $header-contact-info-bar-buttons-font-size;
     color: $header-contact-info-bar-items-color;
@@ -48,6 +49,7 @@
   &__link-tel-number {
     align-self: center;
     @include default-set-for-link();
+    @include font-family("Intro Regular");
     font-size: 20px;
     line-height: $header-contact-info-bar-items-kerning / 20;
     font-weight: bold;
@@ -56,12 +58,14 @@
   &__link-tel-number-alt {
     align-self: center;
     @include default-set-for-link();
+    @include font-family("Intro Regular");
     font-size: 20px;
     line-height: $header-contact-info-bar-items-kerning / 20;
     font-weight: bold;
   }
 
   &__tel-number-region-code {
+    @include font-family("Intro Bold");
     color: $header-tel-number-region-code-color;
     font-size: 14px;
     line-height: $header-contact-info-bar-items-kerning / 14;
@@ -78,6 +82,7 @@
     justify-content: space-between;
     width: 158px;
     padding: 0 41px 0 30px;
+    @include font-family("Intro Regular");
     font-size: $header-contact-info-bar-buttons-font-size + px;
     line-height: $header-contact-info-bar-items-kerning / $header-contact-info-bar-buttons-font-size;
     @include default-set-for-link();
