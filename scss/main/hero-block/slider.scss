@@ -24,6 +24,7 @@ $total-slider-cards: 3;
   flex-direction: row;
   flex-wrap: nowrap;
   width: $container-width * $total-slider-cards + px;
+  transition: left 0.3s;
 
 }
 
