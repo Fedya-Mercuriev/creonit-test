@@ -22,6 +22,10 @@
     border: 2px solid #ffffff;
     background-color: #ffffff;
     color: $main-evaluation-form-radio-input-checked-text-color;
+
+    &:hover {
+      color: #626161;
+    }
   }
 
   &__body-type-fat-label {
@@ -37,6 +41,10 @@
     border: 2px solid #ffffff;
     background-color: #ffffff;
     color: $main-evaluation-form-radio-input-checked-text-color;
+
+    &:hover {
+      color: #626161;
+    }
   }
 
   &__body-type-skinny-label {
@@ -52,5 +60,9 @@
     border: 2px solid #ffffff;
     background-color: #ffffff;
     color: $main-evaluation-form-radio-input-checked-text-color;
+
+    &:hover {
+      color: #626161;
+    }
   }
 }

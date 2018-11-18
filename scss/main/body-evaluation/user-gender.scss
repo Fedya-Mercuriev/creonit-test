@@ -18,6 +18,10 @@
     border: 2px solid #ffffff;
     background-color: #ffffff;
     color: $main-evaluation-form-radio-input-checked-text-color;
+
+    &:hover {
+      color: #626161;
+    }
   }
 
   &__gender-male-input {
@@ -33,6 +37,10 @@
     border: 2px solid #ffffff;
     background-color: #ffffff;
     color: $main-evaluation-form-radio-input-checked-text-color;
+
+    &:hover {
+      color: #626161;
+    }
   }
 
   &__gender-female-input {

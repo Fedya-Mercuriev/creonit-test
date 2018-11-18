@@ -1,15 +1,15 @@
 .events-banner-wrapper {
 	position: relative;
-  
+
   &[data-event-num="1"] {
-    top: 57px;
+    top: 70px;
   }
 
   &[data-event-num="2"] {
-    top: 33px;
+    top: 46px;
   }
 
   &[data-event-num="3"] {
-    top: 10px;
+    top: 23px;
   }
 }

@@ -10,12 +10,24 @@
 	background-repeat: no-repeat;
 }
 
-.walking-guy {
+.walking-man-space {
+	position: relative;
+}
+
+.walking-man-wrapper {
 	position: absolute;
 	bottom: -49px;
-	right: 0%;
-	width: 277px;
-	height: 300px;
-	background-image: url('../../../img/walking-man.gif');
-	background-repeat: no-repeat;
+	left: 0px;
+}
+
+.walking-man-img {
+
+	&--flipped {
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+	}
 }
