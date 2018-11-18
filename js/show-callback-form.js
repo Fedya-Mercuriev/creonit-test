@@ -7,7 +7,7 @@
             $buttons = $inputsContainer.contents().filter('label');
 
         $inputsContainer.on('click', 'label', function(event) {
-          // event.stopPropagation();
+          event.stopPropagation();
           $(event.target).addClass('js-callback-form-label-btn--is-checked');
           $.each($buttons, function(key) {
             if ($buttons[key] != event.target) {
