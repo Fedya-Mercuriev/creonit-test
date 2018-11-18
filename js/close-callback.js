@@ -8,20 +8,15 @@
 		formContent.empty();
 	}
 
-// Удаляем форму при нажатии на крестик фон
-	overlay.on('click', ".close-form-btn", function(event) {
-		// Очищаем форму
-		cleaFormContent()
-		// Прячем ее
+// Удаляем форму при нажатии на крестик
+	formWrapper.on('click', '.close-form-btn', function(event) {
+		cleaFormContent();
 		overlay.removeClass('js-callback-form-overlay--shown');
 		formWrapper.addClass('js-callback-form-wrapper--hidden');
-		// Разблокируем скроллинг
 		$('body').removeClass('block-scroll');
-		event.stopPropagation();
-	});
-
+	})
 // Удаляем форму при нажатии на затемненный фон
-	overlay.click('click', function(event) {
+	overlay.click(function(event) {
 		// Очищаем форму
 		cleaFormContent()
 		// Прячем ее
