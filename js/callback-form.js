@@ -1,4 +1,3 @@
-(function($) {
   function CallbackForm(options) {
     let form,
         overlay,
@@ -15,6 +14,7 @@
       return result;
     }
 
+// Сборщик формы
     function makeForm(elemsObj) {
       let result = "";
       for (let key in elemsObj) {
@@ -40,33 +40,4 @@
     }
 
     this.render = render;
-  }
-
-  let options = {
-    textBlock: {
-      title: "<h2 class=\"js-callback-form-title\">Результат расчета веса</h2>",
-      paragraph: "<p class=\"js-callback-form-text\"> Похоже, лишний вес вам не грозит. А значит, вам прямая дорога в тренажерный зал — набирать мышечную массу и приобретать эффектные формы. Персональные тренировки помогут выстроить грамотную программу и добиться результатов быстрее. И не забывайте о растяжке после тренировок\!</p>"
-    },
-    form: {
-      radios: {
-        labelOne: "<label for=\"radio-one\" class=\"js-callback-form-label-btn\">Записаться на гостевой визит</label>",
-        inputOne: "<input id=\"radio-one\" class=\"js-callback-form-radio-input\" name=\"callback-reason\" />",
-        labelTwo: "<label for=\"radio-two\" class=\"js-callback-form-label-btn\">Заказать карту</label>",
-        inputTwo: "<input id=\"radio-two\" class=\"js-callback-form-radio-input\" name=\"callback-reason\" />"
-      },
-      textInputs: {
-        formLabelName: "<label class=\"js-callback-form-text-label\">Имя </label>",
-        formInputName: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"name\" value=\"\"></input>",
-        formLabelPhone: "<label class=\"js-callback-form-text-label\">Телефон</label>",
-        formInputPhone: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"phone-number\" value=\"\"></input>"
-      },
-      privacyPolicyText: "<p class=\"js-callback-form-privacy-policy-text\">Мы обещаем не использовать ваш номер телефона без вашего согласия. Мы не будем рассылать смс и звонить без разрешения.</p>",
-      submitButton: "<button type=\"submit\" class=\"js-callback-form-submit-btn\">Отправить</button>"
-    }
   };
-
-  let callbackForm = new CallbackForm(options);
-  callbackForm.render();
-})(jQuery);
-
-// Образец объекта options

@@ -1,18 +1,9 @@
 (function($) {
-	let $calendarAlert = $('.calendar-icon__alert-icon');
-	if (getScheduleUpdates()) {
-		// Если расписание было обновлено - добавляем класс visible иконке календаря 
-		$calendarAlert.addClass('calendar-icon__alert-icon--visible');
-	} else if ($calendarAlert.hasClass('calendar-icon__alert-icon--visible')) {
-		// Если обновление не было, проверяем видима ли alert-иконка у календаря
-		// если да, то прячем ее
-		$calendarAlert.removeClass('calendar-icon__alert-icon--visible');
-		$calendarAlert.addClass('calendar-icon__alert-icon--hidden');
-	}
+	var $calendarAlert = $('.calendar-icon__alert-icon');
 
 	function getScheduleUpdates() {
 	var updateStatus = false;
-	// Предположим, эта функция делает запрос на сервер и получает оттуда 
+	// Предположим, эта функция делает запрос на сервер и получает оттуда
 	// статус были обновления или нет и возвращает true или false
 
 	// Пусть результат будет случайным
@@ -23,8 +14,18 @@
   		}
   		return false;
 	}
-	
+
 	updateStatus = getRandomResult(1, 10);
 	return updateStatus;
 }
+
+	if (getScheduleUpdates()) {
+		// Если расписание было обновлено - добавляем класс visible иконке календаря
+		$calendarAlert.addClass('calendar-icon__alert-icon--visible');
+	} else if ($calendarAlert.hasClass('calendar-icon__alert-icon--visible')) {
+		// Если обновление не было, проверяем видима ли alert-иконка у календаря
+		// если да, то прячем ее
+		$calendarAlert.removeClass('calendar-icon__alert-icon--visible');
+		$calendarAlert.addClass('calendar-icon__alert-icon--hidden');
+	}
 })(jQuery);

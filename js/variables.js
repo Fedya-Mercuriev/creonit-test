@@ -12,9 +12,9 @@ var calcBodyTypeFormParams = {
     },
     textInputs: {
       formLabelName: "<label class=\"js-callback-form-text-label\">Имя </label>",
-      formInputName: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"name\" value=\"\"></input>",
+      formInputName: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"name\" value=\"\" required></input>",
       formLabelPhone: "<label class=\"js-callback-form-text-label\">Телефон</label>",
-      formInputPhone: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"phone-number\" value=\"\"></input>",
+      formInputPhone: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"phone-number\" value=\"\" required></input>",
     },
     privacyPolicyText: "<p class=\"js-callback-form-privacy-policy-text\">Мы обещаем не использовать ваш номер телефона без вашего согласия. Мы не будем рассылать смс и звонить без разрешения.</p>",
     submitButton: "<button type=\"submit\" class=\"js-callback-form-submit-btn\">Отправить</button>"
@@ -27,9 +27,9 @@ orderPhoneCallForm = {
   form: {
     textInputs: {
       formLabelName: "<label class=\"js-callback-form-text-label\">Имя </label>",
-      formInputName: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"name\" value=\"\"></input>",
+      formInputName: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"name\" value=\"\" required></input>",
       formLabelPhone: "<label class=\"js-callback-form-text-label\">Телефон</label>",
-      formInputPhone: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"phone-number\" value=\"\"></input>"
+      formInputPhone: "<input class=\"js-callback-form-text-input\" type=\"text\" name=\"phone-number\" value=\"\" required></input>"
     },
     privacyPolicyText: "<p class=\"js-callback-form-privacy-policy-text\">Мы обещаем не использовать ваш номер телефона без вашего согласия. Мы не будем рассылать смс и звонить без разрешения.</p>",
     submitButton: "<button type=\"submit\" class=\"js-callback-form-submit-btn\">Отправить</button>"

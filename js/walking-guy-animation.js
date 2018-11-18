@@ -22,7 +22,8 @@ function WalkingMan() {
 
 	// Здесь хранится сама функция, которая будет обрабатывать ходьбу
 	function walkHandler() {
-		// containerWidth = calcEndPoint();
+		// Если человечек стоит в начале, тогда назначаем ему анимацию, которая
+		// перенесет его в правую часть экрана
 		if (!(currentPosition === containerWidth)) {
 			element.animate({
 				left: startPosition
@@ -32,6 +33,7 @@ function WalkingMan() {
 				}, transitionLength * 1000)
 			});
 			currentPosition = containerWidth;
+			// Иначе устанавливаем ему анимацию, которая вернет его в левую часть экрана
 		} else {
 			element.animate({
 				left: containerWidth
@@ -49,9 +51,6 @@ function WalkingMan() {
 		// но уже с другим значением
 		walkHandler();
 		_timer = setInterval(walkHandler, interval);
-		// setTimeout(function() {
-		//
-		// }, (interval * 1000) * 2);
 	};
 
 	 function calcTransition(comtainerWidth) {
@@ -63,7 +62,7 @@ function WalkingMan() {
 	function init() {
 		// Считаем ширину контейнера
 		containerWidth = calcEndPoint();
-		// Считаем длительност анимации
+		// Считаем длительность анимации
 		transitionLength = calcTransition(containerWidth);
 		currentPosition = startPosition;
 		// Начинаем ходьбу
@@ -76,17 +75,3 @@ function WalkingMan() {
 
 var walkMan = new WalkingMan();
 walkMan.init();
-
-// $(window).resize(function() {
-// 	var contWidth = walkMan.calcEndPoint(),
-// 		transition = walkMan.calcTransition(contWidth);
-// 		walkMan.walk = makeCustomInterval(walkMan, walkMan.walk, transition);
-// 		walkMan.walk();
-// })
-
-// function makeCustomInterval(ctx, func, interval) {
-// 	var self = ctx;
-// 	return function() {
-// 		setInterval(func.bind(self, arguments), interval);
-// 	}
-// }
