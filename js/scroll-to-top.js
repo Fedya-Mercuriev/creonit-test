@@ -21,5 +21,4 @@
   })
 
   $(document).scroll(scrollTrack);
-  // scroll();
 })();

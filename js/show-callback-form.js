@@ -7,10 +7,18 @@
 // цвета, чтобы показать их состояние
       function styleCallbackRadios() {
         var $inputsContainer = $('.js-callback-form-radios-wrapper'),
-            $buttons = $inputsContainer.contents().filter('label');
+            $buttons = $inputsContainer.contents().filter('label'),
+            firstlaunch = true;
+
+        if (firstlaunch) {
+          $buttons.eq(0).addClass('js-callback-form-label-btn--is-checked');
+        }
 
         $inputsContainer.on('click', 'label', function(event) {
           event.stopPropagation();
+          if (firstlaunch) {
+            $(event.target).removeClass('js-callback-form-label-btn--is-checked');
+          }
           $(event.target).addClass('js-callback-form-label-btn--is-checked');
           $.each($buttons, function(key) {
             if ($buttons[key] != event.target) {
@@ -18,6 +26,7 @@
             }
           });
         })
+        firstlaunch = false;
       }
 
 // Этот обработчик отвечает за отображение модалки после подсчета своего типа

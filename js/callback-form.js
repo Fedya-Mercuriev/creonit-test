@@ -19,7 +19,7 @@
       let result = "";
       for (let key in elemsObj) {
         if (typeof elemsObj[key] === 'object') {
-          result += `<div class="js-callback-form-${key}-wrapper">${makeForm(elemsObj[key])}</div>`;
+          result += "<div class=\"js-callback-form-" + key + "-wrapper\">" + makeForm(elemsObj[key]) + "</div>";
           continue;
         }
         result += elemsObj[key];
@@ -30,7 +30,7 @@
     function render() {
       // Соберем форму по частям
       text = makeText(params.textBlock);
-      form = `<form class=\"js-callback-form\" action=\"\" method=\"post\">${makeForm(params.form)}</form>`;
+      form = "<form class=\"js-callback-form\" action=\"\" method=\"post\">" + makeForm(params.form) + "</form>";
       // Присвоим компоненты обертке
       formContent.append(text);
       formContent.append(form);
