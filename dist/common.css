@@ -1,3 +1,182 @@
+.block-title {
+  position: relative;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  font-family: "Intro Regular Alt", Arial, sans-serif;
+  text-align: center;
+  color: #626161;
+  font-size: 34px; }
+
+.js-callback-form-wrapper {
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10000;
+  box-sizing: border-box;
+  padding: 6px;
+  background-color: #ffffff; }
+  .js-callback-form-wrapper--hidden {
+    display: none; }
+
+.js-callback-form-content {
+  position: relative;
+  padding: 25px 40px;
+  border: 5px solid #d3eff2; }
+
+.close-form-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  z-index: 1;
+  display: block;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  cursor: pointer; }
+  .close-form-btn__stroke-down {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform-origin: center;
+    transform: rotate(45deg); }
+  .close-form-btn__stroke-up {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform-origin: center;
+    transform: rotate(-45deg); }
+
+.js-callback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px; }
+  .js-callback-form-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: "Intro Bold Alt", Arial, sans-serif;
+    font-size: 34px;
+    color: #333333;
+    text-align: center; }
+  .js-callback-form-text {
+    padding: 0;
+    margin: 0;
+    font-size: 14px; }
+  .js-callback-form-radios-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 467px;
+    margin-bottom: 20px; }
+  .js-callback-form-textInputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .js-callback-form-label-btn {
+    box-sizing: border-box;
+    padding: 11px 30px;
+    border: 2px solid #1bbbd9;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    font-family: "Opensans Bold", Arial, sans-serif;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    font-family: "Opensans Regular", Arial, sans-serif; }
+    .js-callback-form-label-btn:hover {
+      border-color: #41edff; }
+    .js-callback-form-label-btn--is-checked {
+      background-color: #1bbbd9;
+      color: #ffffff; }
+  .js-callback-form-radio-input {
+    display: none; }
+  .js-callback-form-text-label {
+    width: 100%;
+    margin-bottom: 3px;
+    text-align: left; }
+  .js-callback-form-text-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #b7e5eb;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: #d3eff2;
+    color: #333333;
+    font-size: 13px;
+    -webkit-box-shadow: inset 0 0 0 #b7e5eb;
+    -moz-box-shadow: inset 0 0 0 #b7e5eb;
+    box-shadow: inset 0 0 0 #b7e5eb; }
+    .js-callback-form-text-input:focus {
+      border-radius: 0;
+      background-color: #ffffff;
+      -webkit-box-shadow: inset 0 0 0 #17add2;
+      -moz-box-shadow: inset 0 0 0 #17add2;
+      box-shadow: inset 0 0 0 #17add2;
+      outline: 1px solid #17add2; }
+  .js-callback-form-privacy-policy-text {
+    max-width: 330px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 10px;
+    color: #999999; }
+  .js-callback-form-submit-btn {
+    padding: 15px 48px;
+    border: 2px solid #1bbbd9;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    outline-color: transparent;
+    background-color: #1bbbd9;
+    color: #ffffff;
+    font-family: "Intro Bold Alt", Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; }
+    .js-callback-form-submit-btn:hover {
+      border: 2px solid #41edff;
+      background-color: #41edff; }
+    .js-callback-form-submit-btn:active {
+      outline-color: transparent; }
+
+.js-callback-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .js-callback-form-overlay--shown {
+    display: block; }
+
+.centrifying-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 html {
   font-size: 14px;
   color: #333;
@@ -84,21 +263,6 @@ body {
   src: url("../fonts/opensans-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
-
-.centrifying-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.block-title {
-  position: relative;
-  z-index: 1000;
-  padding: 0;
-  margin: 0;
-  font-family: "Intro Regular Alt", Arial, sans-serif;
-  text-align: center;
-  color: #626161;
-  font-size: 34px; }
 
 .contact-info-top {
   display: flex;
@@ -621,7 +785,7 @@ body {
 .calories-you-could-burn-block {
   position: relative;
   padding-top: 27px;
-  background-image: url("../img/body-bg--bottom.jpg");
+  background-image: url("../../../img/body-bg--bottom.jpg");
   background-position: bottom center;
   background-repeat: no-repeat; }
 
