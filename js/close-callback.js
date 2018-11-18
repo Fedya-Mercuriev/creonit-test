@@ -15,6 +15,8 @@
 		// Прячем ее
 		overlay.removeClass('js-callback-form-overlay--shown');
 		formWrapper.addClass('js-callback-form-wrapper--hidden');
+		// Разблокируем скроллинг
+		$('body').removeClass('block-scroll');
 		event.stopPropagation();
 	});
 
@@ -25,6 +27,8 @@
 		// Прячем ее
 		overlay.removeClass('js-callback-form-overlay--shown');
 		formWrapper.addClass('js-callback-form-wrapper--hidden');
+		// Разблокируем скроллинг
+		$('body').removeClass('block-scroll');
 		event.stopPropagation();
 	})
 }
