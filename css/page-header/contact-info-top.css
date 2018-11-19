@@ -24,6 +24,7 @@
     justify-content: space-between;
     width: 181px;
     padding: 0 31px 0 18px;
+    font-family: "Intro Regular", Arial, sans-serif;
     font-size: 12px;
     line-height: 1.66667;
     color: #ffffff;
@@ -35,6 +36,7 @@
     align-self: center;
     color: #fff;
     text-decoration: none;
+    font-family: "Intro Regular", Arial, sans-serif;
     font-size: 20px;
     line-height: 1;
     font-weight: bold; }
@@ -42,10 +44,12 @@
     align-self: center;
     color: #fff;
     text-decoration: none;
+    font-family: "Intro Regular", Arial, sans-serif;
     font-size: 20px;
     line-height: 1;
     font-weight: bold; }
   .contact-info-list__tel-number-region-code {
+    font-family: "Intro Bold", Arial, sans-serif;
     color: #ffa3b9;
     font-size: 14px;
     line-height: 1.42857;
@@ -58,6 +62,7 @@
     justify-content: space-between;
     width: 158px;
     padding: 0 41px 0 30px;
+    font-family: "Intro Regular", Arial, sans-serif;
     font-size: 12px;
     line-height: 1.66667;
     color: #fff;

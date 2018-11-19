@@ -1,4 +1,4 @@
-(function($) {
+(function() {
 	var $calendarAlert = $('.calendar-icon__alert-icon');
 
 	function getScheduleUpdates() {
@@ -28,4 +28,4 @@
 		$calendarAlert.removeClass('calendar-icon__alert-icon--visible');
 		$calendarAlert.addClass('calendar-icon__alert-icon--hidden');
 	}
-})(jQuery);
+})();

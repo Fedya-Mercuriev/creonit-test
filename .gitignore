@@ -1,4 +1,5 @@
 _design
 node_modules
 css
-.DS_Store
+*.DS_Store
+.gulp-scss-cache
